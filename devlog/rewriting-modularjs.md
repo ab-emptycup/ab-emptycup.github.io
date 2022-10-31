@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: page
+title: Rewriting modular.js
 ---
 
-## Rewriting modular.js
-
-`modular.js` contains EmptyCup's woodwork design inteface.
+__modular.js__ contains EmptyCup's woodwork design inteface.
