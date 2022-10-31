@@ -18,6 +18,7 @@ It has been a week since, I last looked at the code. So, there's has been a cont
 
 
 -----
+<br>
 
 _modular.js_ is EmptyCup's woodwork design interface.
 This is a log of it's rewrite as part of total product rewrite.
