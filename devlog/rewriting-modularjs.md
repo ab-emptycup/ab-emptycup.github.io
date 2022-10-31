@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: default
 ---
 
-### Rewriting modular.js
+## Rewriting modular.js
 
 #### October 31:
 
