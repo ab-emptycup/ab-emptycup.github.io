@@ -7,6 +7,4 @@ author: ab-emptycup
 description: ""
 email: ab@emptycup.in
 
-# header_pages:
-#   - notes.md
-#   - devlog.md
+header_pages:
