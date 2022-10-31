@@ -3,7 +3,8 @@ minima:
   skin: dark
 
 title: Ab
+description: Development log
 
 header_pages:
-  Notes: notes.md
-  Devlog: devlog.md
+  - notes.md
+  - devlog.md

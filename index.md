@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 ---
 
 [Rewriting modularjs](/devlog/modularjs.md)
