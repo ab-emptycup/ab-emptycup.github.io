@@ -2,6 +2,8 @@ theme: minima
 
 minima:
   skin: dark
+
+title: Ab
  
 header_pages:
   Books: books.md
