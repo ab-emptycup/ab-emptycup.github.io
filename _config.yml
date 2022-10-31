@@ -1,0 +1,11 @@
+theme: minima
+minima:
+  skin: dark
+
+title: Ab
+author: ab-emptycup
+description: ""
+email: ab@emptycup.in
+
+header_pages:
+  - index.md
