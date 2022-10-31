@@ -1,1 +1,9 @@
 theme: minima
+
+minima:
+  skin: dark
+ 
+header_pages:
+  Books: books.md
+  Devlog: devlog.md
+  Zen: zen.md
