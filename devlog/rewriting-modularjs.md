@@ -3,6 +3,9 @@ layout: default
 title: Rewriting modular.js
 ---
 
+## Rewriting modular.js
+<br>
+
 #### October 31:
 
 I'm trying to get the component move to work. A few considerations:
