@@ -4,7 +4,12 @@ minima:
 
 title: Ab
 description: Development log
+author:
+  email: ab@emptycup.in
 
-header_pages:
-  - notes.md
-  - devlog.md
+social:
+  github: ab-emptycup
+
+# header_pages:
+#   - notes.md
+#   - devlog.md
