@@ -1,4 +1,5 @@
 ---
-layout: post
-title: Ab
+layout: page
 ---
+
+[Rewriting modularjs](/devlog/modularjs.md)
