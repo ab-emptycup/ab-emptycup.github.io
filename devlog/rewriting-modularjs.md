@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: page
 title: Rewriting modular.js
 ---
 
-# Rewriting modular.js
 _modular.js_ is EmptyCup's woodwork design interface.
 This is a log of it's rewrite as part of total product rewrite.
 
@@ -18,7 +17,7 @@ I'm trying to get the component move to work. A few considerations:
 
 It has been a week since, I last looked at the code. So, there's has been a context reset. I don't think I can get up to speed and make changes in just 2 hours. I'll work on something else today and start off tomorrow.
 
-
+---
 
 ## November 1:
 
@@ -28,7 +27,8 @@ It has been a week since, I last looked at the code. So, there's has been a cont
 4. Then, I have to actually move the component onDrop.
 
 
-> TODO: I'm not clear on how docker's storage/caching works. I need to learn about it. I'm inadvertantly deleting containers and rebuilding takes quite a bit of time.
+TODO: I'm not clear on how docker's storage/caching works. I need to learn about it. I'm inadvertantly deleting containers and rebuilding takes quite a bit of time.
+
 
 
 Gumption trap early in the day. I had deleted my dev containers earlier.
@@ -57,6 +57,6 @@ Cleaned up more than 50% of dense number logic code. Still some way to go.
 Turning in for the day. Don't want to throw schedule off.
 Atleast, I can start tomorrow with some gumption.
 
-
+---
 
 
