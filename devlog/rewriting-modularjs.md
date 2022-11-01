@@ -3,10 +3,24 @@ layout: default
 title: Rewriting modular.js
 ---
 
-## Rewriting modular.js
-<br>
+# Rewriting modular.js
+_modular.js_ is EmptyCup's woodwork design interface.
+This is a log of it's rewrite as part of total product rewrite.
 
-### November 1:
+
+## October 31:
+
+I'm trying to get the component move to work. A few considerations:
+
+- Component move should show a shadow moving with the pointer.
+- Undo should set the state to before the move was initiated.
+- Move should snap to all the relavent snap points.
+
+It has been a week since, I last looked at the code. So, there's has been a context reset. I don't think I can get up to speed and make changes in just 2 hours. I'll work on something else today and start off tomorrow.
+
+
+
+## November 1:
 
 1. First step is verifying that the existing setup is stable and working.
 2. Then, I'll make the shadow appear and move instead of the actual component.
@@ -14,7 +28,7 @@ title: Rewriting modular.js
 4. Then, I have to actually move the component onDrop.
 
 
-- TODO: I'm not clear on how docker's storage/caching works. I need to learn about it. I'm inadvertantly deleting containers and rebuilding takes quite a bit of time.
+> TODO: I'm not clear on how docker's storage/caching works. I need to learn about it. I'm inadvertantly deleting containers and rebuilding takes quite a bit of time.
 
 
 Gumption trap early in the day. I had deleted my dev containers earlier.
@@ -34,25 +48,15 @@ Some strange behaviour noted. But, don't feel like digging into it now. I'll lea
     - Actually when mouse strays outside the components, component's event filter was hidingControls. Disabled it when moving and seems to be working.
 
 Coming back to snaps now.
+- Refactored the snapping code.
+- Fixed a bunch of trivial errors.
+- Got snap working, but incorrectly.
+
+Decided to rewrite snapping code, as there seems huge scope for improvement.
+Cleaned up more than 50% of dense number logic code. Still some way to go.
+Turning in for the day. Don't want to throw schedule off.
+Atleast, I can start tomorrow with some gumption.
 
 
-
-
-### October 31:
-
-I'm trying to get the component move to work. A few considerations:
-
-- Component move should show a shadow moving with the pointer.
-- Undo should set the state to before the move was initiated.
-- Move should snap to all the relavent snap points.
-
-It has been a week since, I last looked at the code. So, there's has been a context reset. I don't think I can get up to speed and make changes in just 2 hours. I'll work on something else today and start off tomorrow.
-
-
------
-<br>
-
-_modular.js_ is EmptyCup's woodwork design interface.
-This is a log of it's rewrite as part of total product rewrite.
 
 
