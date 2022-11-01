@@ -5,9 +5,9 @@ title: Rewriting modular.js
 
 _modular.js_ is EmptyCup's woodwork design interface.
 This is a log of it's rewrite as part of total product rewrite.
+<br>
 
-
-## October 31:
+### October 31:
 
 I'm trying to get the component move to work. A few considerations:
 
@@ -18,8 +18,9 @@ I'm trying to get the component move to work. A few considerations:
 It has been a week since, I last looked at the code. So, there's has been a context reset. I don't think I can get up to speed and make changes in just 2 hours. I'll work on something else today and start off tomorrow.
 
 ---
+<br>
 
-## November 1:
+### November 1:
 
 1. First step is verifying that the existing setup is stable and working.
 2. Then, I'll make the shadow appear and move instead of the actual component.
@@ -55,7 +56,4 @@ Decided to rewrite snapping code, as there seems huge scope for improvement.
 Cleaned up more than 50% of dense number logic code. Still some way to go.
 Turning in for the day. Don't want to throw schedule off.
 Atleast, I can start tomorrow with some gumption.
-
----
-
 
