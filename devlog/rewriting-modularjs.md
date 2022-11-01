@@ -30,7 +30,6 @@ It has been a week since, I last looked at the code. So, there's has been a cont
 TODO: I'm not clear on how docker's storage/caching works. I need to learn about it. I'm inadvertantly deleting containers and rebuilding takes quite a bit of time.
 
 
-
 Gumption trap early in the day. I had deleted my dev containers earlier.
 Now when I try to rebuild, it suddenly starts complaining that the platform
  'linux/arm/64' is incompatible with mysql which is true enough.
