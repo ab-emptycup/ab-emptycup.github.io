@@ -6,7 +6,39 @@ title: Rewriting modular.js
 ## Rewriting modular.js
 <br>
 
-#### October 31:
+### November 1:
+
+1. First step is verifying that the existing setup is stable and working.
+2. Then, I'll make the shadow appear and move instead of the actual component.
+3. Then, I have to figure out how to identify all the viable snap points.
+4. Then, I have to actually move the component onDrop.
+
+
+- TODO: I'm not clear on how docker's storage/caching works. I need to learn about it. I'm inadvertantly deleting containers and rebuilding takes quite a bit of time.
+
+
+Gumption trap early in the day. I had deleted my dev containers earlier.
+Now when I try to rebuild, it suddenly starts complaining that the platform
+ 'linux/arm/64' is incompatible with mysql which is true enough.
+Earlier, I think I was passing a platform flag to docker to emulate 'linux/amd64'.
+But the right fix for this is to use mariadb which seems to be a drop in replacement.
+So, I do that. There's some issue with mariadb getting started:
+Could not figure out what the issue was. So, decided to continue running docker in emulation mode 'linux/amd64'.
+Some strange behaviour noted. But, don't feel like digging into it now. I'll leave it with a mental tab.
+
+
+- Got the shadow working and moving along with the pointer. Then the component moving with a jump on drop.
+- Snaps are still not working.
+- Noticed an issue with shadow being orphaned when the pointer leaves it.
+    - Likely due to mouse events not being fired when pointer outside outline / shadow. Looking into it now.
+    - Actually when mouse strays outside the components, component's event filter was hidingControls. Disabled it when moving and seems to be working.
+
+Coming back to snaps now.
+
+
+
+
+### October 31:
 
 I'm trying to get the component move to work. A few considerations:
 
