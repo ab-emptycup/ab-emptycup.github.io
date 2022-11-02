@@ -67,4 +67,7 @@ Atleast, I can start tomorrow with some gumption.
 - Tested the snapping logic.
 - Rewrote the code for drawing snapping cues.
 - Tested and tuned the cues to be clear and symmetrical.
+- Further optimised snap point computation code.
+
+
 
