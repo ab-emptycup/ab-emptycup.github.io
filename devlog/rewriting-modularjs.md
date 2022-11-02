@@ -5,7 +5,7 @@ title: Rewriting modular.js
 
 _modular.js_ is EmptyCup's woodwork design interface.
 This is a log of it's rewrite as part of total product rewrite.
-<br>
+<br><br>
 
 ### October 31:
 
@@ -56,4 +56,15 @@ Decided to rewrite snapping code, as there seems huge scope for improvement.
 Cleaned up more than 50% of dense number logic code. Still some way to go.
 Turning in for the day. Don't want to throw schedule off.
 Atleast, I can start tomorrow with some gumption.
+
+-----
+<br>
+
+### November 2:
+
+- Cleaned up the snap code.
+- Updated the logic for the updated canvas conventions.
+- Tested the snapping logic.
+- Rewrote the code for drawing snapping cues.
+- Tested and tuned the cues to be clear and symmetrical.
 
