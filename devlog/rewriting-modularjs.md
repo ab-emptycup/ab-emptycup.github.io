@@ -69,5 +69,12 @@ Atleast, I can start tomorrow with some gumption.
 - Tested and tuned the cues to be clear and symmetrical.
 - Further optimised snap point computation code.
 
+That done, decided to get started with enabling the partition split button.
+
+- Added a UI control for all cupboard sections and positioned it next to the gear.
+- Tried a few icons, but not happy with them. Leaving a placeholder icon for now.
+- Ran into an issue of on:click not getting triggered.
 
 
+----
+<br>
