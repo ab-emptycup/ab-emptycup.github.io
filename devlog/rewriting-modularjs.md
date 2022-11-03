@@ -78,3 +78,17 @@ That done, decided to get started with enabling the partition split button.
 
 ----
 <br>
+
+### November 3:
+
+- Fixed the issue with on:click on getting triggered.
+- Tried a few more icons. Rotating the button on changing orientation. Still not 100% satisfied.
+- Handled hiding the button on mouseOut()
+- Implemented onSplitToggle for the renderer.
+- Successfully toggle split orientation. Noticed issue with horizontal split rendering.
+- Fixed horizonal split rendering.
+- Added fix to remember last used split orientation.
+
+Partition split toggle working as expected now.
+
+Started work on implementing component scale.
