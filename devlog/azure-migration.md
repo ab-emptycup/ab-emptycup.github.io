@@ -14,3 +14,19 @@ This is a log of that effort.
 - Shared Global Administrator access to Xencia for both subscriptions.
 - Awaiting their confirmation for timings for migration. Likely in the next 2 days.
 - The migration has been scheduled for next Friday 6am.
+
+## November 4
+
+Got on the call for the migration at 6am
+
+TODO: Before beginning all the the available resource providers were "registered" for the new subscription. But, those registrations have not been evoked after the migration. This needs to be double checked.
+
+- We first moved the target subscription to the source directory / tenant. Moved the resources to the target subscription and then moved the target subscription back to the target tenant.
+- We had a road block moving the studio render workers. Apparently moving spot instances across subscriptions is not currently supported. So, we decided to just move the VHD snapshot to the new subscription and create new worker VMs again.
+- Next we moved the app services. We deleted the SSL bindings and the app certificates first. Then created them again after the move. Remembered that studio3d backend doesn't have a custom domain configured.
+- We then created a new SSH key in the new subscription as moving SSH keys is not supported.
+
+After the migration, I successfully created a render worker VM with a dynamic ip on the new subscription. But, I realised that there is an issue with the hardcoded azure credentials in the app. Till the app env var config is updated, the app will still try to spin up render workers from the old subscription. Further, the render-worker script itself needs to be updated with new tenent credentials for it to be able to turn itself off.
+
+I have left these changes for a future session as there seem to be some active render work happening on the product and I don't want to disrupt that. I will mostly likely get to it during the first half of the next week.
+There is also the task of migrating s3 assets to azure. It also looks like I should document things even for studio3d. I don't think I'll remember all the important things if I come back after a month or two. At this point, I'm not confident that I don't have to come back for a couple of months.
