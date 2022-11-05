@@ -29,3 +29,10 @@ So, I have to move all the DNS records to Netlify from Godaddy. Sadly, godaddy's
 over 5 pages with a lot stale and junk records. It took a lot of time to identify the necessary records first.
 I'm still not sure if I might break the domain validation for some service.
 
+November 5:
+- Moved all the DNS records from Godaddy to Netlify
+- Moved the TXT used for validation also
+- HTTPS got reenabled through automatic cert generation from Let's Encrypt.
+- Tested mail addressing by sending a mail from _ab@emptycup.in_ to _admin@emptycup.in_
+
+
