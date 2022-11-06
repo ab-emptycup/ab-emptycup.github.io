@@ -92,3 +92,34 @@ That done, decided to get started with enabling the partition split button.
 Partition split toggle working as expected now.
 
 Started work on implementing component scale.
+
+----
+<br>
+
+### November 5:
+
+Continuing work on implementing scale
+
+- Got the Scale controls to render properly.
+- Implemented the component controller.
+
+----
+<br>
+
+
+### November 6:
+
+- Implemented outline rendering on starting scale.
+- Fixed outline scaling on moving control.
+- Component size now gets updated on finishing scale operation.
+- Disabled partition split on scaling or moving.
+- Got snap working after a lot of fight.
+
+Still some anamolies in scale UI behaviour.
+
+----
+<br>
+
+
+
+

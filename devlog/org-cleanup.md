@@ -6,7 +6,7 @@ title: Org cleanup
 A list of all the things that needed to be cleaned up.
 The goal is to evolve conventions / processes, so that these things don't get messy again.
 
-### Domain email accounts for old employess
+### Employee google accounts
 
 - Google accounts
 - Signups for newsletters and services
@@ -54,3 +54,4 @@ Learnings:
 - DNS should be hosted where SSL is automatically renewed irrespective of registrar.
 - Avoid multiple domains
 - Avoid multiple DNS servers
+
