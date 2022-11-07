@@ -121,5 +121,18 @@ Still some anamolies in scale UI behaviour.
 <br>
 
 
+### November 7:
+
+- Unable to reproduce anamolous UI scale behaviour.
+    - Partition split not getting disabled properly on scaling
+    - UI controls not being properly enabled on mouseOver
+
+- Noticed issue with scaling partitioned boxes. That needs to be disabled.
+    - Ideally, mouse pointer should show an invalid subtext icon on hover
+    - Implemented. Cursor changes based on component.isScalable().
+
+- Noticed that snap cues are not rendering for scaling snaps.
+    - Fixed an issue with snap cue positioning.
+    - Noticing this strange behaviour again where suddenly the UI controls stop showing without any errors.
 
 
