@@ -30,3 +30,13 @@ After the migration, I successfully created a render worker VM with a dynamic ip
 
 I have left these changes for a future session as there seem to be some active render work happening on the product and I don't want to disrupt that. I will mostly likely get to it during the first half of the next week.
 There is also the task of migrating s3 assets to azure. It also looks like I should document things even for studio3d. I don't think I'll remember all the important things if I come back after a month or two. At this point, I'm not confident that I don't have to come back for a couple of months.
+
+
+## November 8
+
+- Created spotVMs in the new subscription.
+- Created a service principal in azure to let the app spin up the new spotVMs. Got stuck for an hour fixing broken permissions on the newly created SP.
+- Realised we have quote for upto 4 worker VMs in each region. But, failed to create workers because location move is not supported for VHD snapshot. Move was not even supported for spot vm instance. This is something I need to check with Xencia.
+- Spent another hour trying to figure out why preemptible machines are not being started when a render request comes in. Turned out I forgot to set the appropriate preemptible tag on instances.
+- Confirmed that catalogue3d doesn't require any config update due to the migration.
+
