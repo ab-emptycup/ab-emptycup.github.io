@@ -135,4 +135,20 @@ Still some anamolies in scale UI behaviour.
     - Fixed an issue with snap cue positioning.
     - Noticing this strange behaviour again where suddenly the UI controls stop showing without any errors.
 
+----
+<br>
 
+### November 8:
+
+Unable to get a solid chunk of time to continue work on this thread.
+
+- Fixed more issues with snap cue positioning. Now working properly.
+- Noticed a pattern for the wierd UI issue. Having a console log in .svelte resets the wierd. May be an issue with Vite cache?
+
+That's about it for the move functionality. I'll work on things outside the canvas for a while.
+
+- Fixed default selection for the SideSwitch
+- Positioned the SideSwitch appropriately.
+
+----
+<br>
