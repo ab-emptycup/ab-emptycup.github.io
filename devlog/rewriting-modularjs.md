@@ -152,3 +152,35 @@ That's about it for the move functionality. I'll work on things outside the canv
 
 ----
 <br>
+
+
+### November 9:
+
+I keep running into the weird issues with the UI controls. I'll dig into those today.
+Before doing that I need to reset my expectations to depress.
+
+A few anamolies that I noticed so far:
+    - Wierd positioning of UI controls: move, settings, split
+    - Suddenly controls stop showing on refresh
+    - Partition split suddenly appears during scaling despite being explicitly blocked.
+
+Right now I'm able to see the wierd positioning. I'll debug that first:
+
+* This may be due to the setting the _container_ div position: to _relative_. I'll test that first.
+* Yup. That was it. But, this breaks the SideSwitch positioning. I need to understand this CSS positioning better to resolve this with confidence.
+* Issue got fixed by changing the _position_ of all control elements to _fixed_. I'm not sure if that is the correct solution. I could dig into the _position_ property further to understand it's semantics. But, I want to move on.
+
+Not able to reproduce the other two issues again. I have to keep a tab and jump on them when I see them next time.
+
+- Added ModularSidebar with Add, Edit & Decor tabs. Tabs functional.
+- Added component accordion. Populated with options.
+- __Ran into this strange issue of API container not responding to requests__. I have seen this before. It usually starts working on its own after some time. These little quirks are not good for the dev environment. Just waiting for now...
+- Turned out that it was a silent broadband issue.
+- Rethinking the organisation of the component list.
+
+
+
+
+
+
+
