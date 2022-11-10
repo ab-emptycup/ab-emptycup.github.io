@@ -179,8 +179,15 @@ Not able to reproduce the other two issues again. I have to keep a tab and jump 
 - Rethinking the organisation of the component list.
 
 
+-----
+<br>
 
+### November 10:
 
+Where should decor options be shown for woodwork? Separate tab? Modal over Modal? Replace grid?
+After a lot of consideration, I have decided to prototype the option of replacing grid.
+Decor category will be shown in the Add Panel and categories within decor will be shown in
+the accordion dropdown for "Decor". Subcategories will be shown in a ribbon on the top of the panel.
 
-
+-
 
