@@ -185,9 +185,30 @@ Not able to reproduce the other two issues again. I have to keep a tab and jump 
 ### November 10:
 
 Where should decor options be shown for woodwork? Separate tab? Modal over Modal? Replace grid?
+
 After a lot of consideration, I have decided to prototype the option of replacing grid.
 Decor category will be shown in the Add Panel and categories within decor will be shown in
 the accordion dropdown for "Decor". Subcategories will be shown in a ribbon on the top of the panel.
+Having designed a prototype in Figma, I'm satisfied with dumping the decor tab in favor of replacing grid.
 
--
+I started implementing addComponent functionality. Testing adding a ledge.
+Ran into an issue with rendering. Ledge dimensions are NaN.
+
+
+----
+<br>
+
+### November 11:
+
+That was an issue with setting the default dimensions on component addition.
+Working on figuring out a clean way of implementing default component sizes.
+
+This rabbit hole goes deep:
+- The default sizes for components are being set in the UI.
+- UI component doesn't have access & shouldn't be directly accessing woodwork side properties / setting component sizes.
+- Ideally, the default sizes need to be set in the component classes.
+- Actually, they're being set both in UI and in woodworkjs. Some components don't have their own classes. That may be why.
+
+
+
 
