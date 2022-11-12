@@ -213,4 +213,13 @@ This rabbit hole goes deep:
 - Implemented cleaner default starting params for components. Tested some components & fixed issues.
 
 
+----
+<br>
 
+### November 12:
+
+
+- Fixed issue with UI controls rendering on deleting components.
+- Refactored and optimised code for setting defaults.
+- Tested all the components and fixed a lot of issues.
+- Refactored LoftRenderer out into a separate file.
