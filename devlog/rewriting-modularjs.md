@@ -222,4 +222,20 @@ This rabbit hole goes deep:
 - Fixed issue with UI controls rendering on deleting components.
 - Refactored and optimised code for setting defaults.
 - Tested all the components and fixed a lot of issues.
-- Refactored LoftRenderer out into a separate file.
+- Refactored LoftRenderer & WardrobeRenderer out.
+
+
+----
+<br>
+
+### November 14:
+
+Trying to fix the issue of Kalash not showing up. Seems to be related to some images not being set properly.
+Ran into another issue of OTG not rendering properly.
+
+I've been stuck on this for too long. May be its better to come back to this later. I'll give it another 30min at max.
+I'll atleast try to fix the Kalash issue. It seems the image encoding is broken? Gave up that efforts. The image is fine. But there is some issue with _loadScaledImage()_ function that is loading image with improper scale. Don't feel like fixing that now. I have already spent more than a couple of hours on this.
+
+Implemented a switch for _modular-container_ when decor is selected in the AddPanel.
+Got the switch working correctly. But every switch was triggering an entire canvas reload.
+So, fixed the switch to just apply _display: none_ class on the container div appropriately. Still testing.
