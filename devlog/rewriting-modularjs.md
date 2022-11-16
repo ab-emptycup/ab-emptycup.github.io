@@ -239,3 +239,25 @@ I'll atleast try to fix the Kalash issue. It seems the image encoding is broken?
 Implemented a switch for _modular-container_ when decor is selected in the AddPanel.
 Got the switch working correctly. But every switch was triggering an entire canvas reload.
 So, fixed the switch to just apply _display: none_ class on the container div appropriately. Still testing.
+
+
+----
+<br>
+
+### November: 15
+
+Neglected to log :(
+
+
+----
+<br>
+
+### November 16:
+
+- Added a temporary fix to disable scroll for DecorGallery beyond viewport height by hardcoding.
+- Implemented toggle buttons for subcategory selection.
+- Converted decor options into toggle for gallery and removed close button & rearranged gallery ribbon.
+- Reorganised the decor options into "Appliances", "Prayer", "Wardrobe" etc.
+- Fetching and filtering the actual furnishing catalogue in Decor gallery.
+- Showing properly shaped thumbnail previews for furnishings now.
+-
