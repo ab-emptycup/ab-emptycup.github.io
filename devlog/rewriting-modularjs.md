@@ -260,4 +260,18 @@ Neglected to log :(
 - Reorganised the decor options into "Appliances", "Prayer", "Wardrobe" etc.
 - Fetching and filtering the actual furnishing catalogue in Decor gallery.
 - Showing properly shaped thumbnail previews for furnishings now.
--
+
+
+----
+<br>
+
+### November 17:
+
+- Added 'type' & 'category' fields to decor option format to work seemlessly with the furnishing catalogue.
+- Connected FurnishingRenderer to handle component add.
+- Added 'furnishings' to woodwork_options & 'frontview_ref' for each furnishing.
+- Closing DecorGallery and updating UI state on adding component.
+- Fixed inconsistency in dimension unit conventions for furnishings (inches / mm / px).
+- Setup sane default position on component add.
+- Adding furnishings successfully now. But, the issue with texture / pattern rendering on canvasObject still persists.
+
