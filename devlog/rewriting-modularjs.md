@@ -275,3 +275,31 @@ Neglected to log :(
 - Setup sane default position on component add.
 - Adding furnishings successfully now. But, the issue with texture / pattern rendering on canvasObject still persists.
 
+----
+<br>
+
+
+### November 20:
+
+
+- Started digging into the issue of rendering preview refs on the canvas object. I'd already spent a few hours on this issue.
+- The full image is rendering when the object is large enough. There is also inconsistency in the repeat option.
+
+This is turning out to be challenge. There is also some issue with the code being cached that's leading to spurious debug cycles. 2 more hours today without any progress. I feel like I need to shift down a gear and go about this more methodically.
+
+1. First, I disabled 'repeat rendering'. Not sure if that's a help. I might turn it on again for debugging.
+2. Second obvious issue is unit discrepancy. I need to convert inches to px before creating image. Doing that now.
+
+The cache issue was causing a lot of problem. I figured it may have something to do with the parallelly running container.
+So, I deleted the "artist" container as there was some issue with just shutting it down. I also fixed the unit discrepancy as much as I can make sense. The rendering seems to have improved, but there is still some issue. May be the canvas zoom needs
+to be taken into consideration.
+
+Yes, discounting the canvas zoom fixed the issue of the image not rendering completely inside the canvas object.
+There is still the issue of the image not scaling to fit into the canvas object. Right now it is getting cropped.
+
+Got it working finally. It seems fabricjs' API has changed since the original implementation and the convention
+for _width_ and _height_ parameters has changed. So, component scale has to be implemented through fractional
+parameters to .set function as _scaleX_ and _scaleY_. That resolved the issue and now the furnishings & Kalash
+are rendering properly.
+
+Fixed the rendering issue with OTG also. Related to the same issue.

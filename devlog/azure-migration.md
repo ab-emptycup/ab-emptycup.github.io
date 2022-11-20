@@ -40,3 +40,4 @@ There is also the task of migrating s3 assets to azure. It also looks like I sho
 - Spent another hour trying to figure out why preemptible machines are not being started when a render request comes in. Turned out I forgot to set the appropriate preemptible tag on instances.
 - Confirmed that catalogue3d doesn't require any config update due to the migration.
 
+
