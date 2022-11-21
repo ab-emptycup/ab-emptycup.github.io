@@ -303,3 +303,8 @@ parameters to .set function as _scaleX_ and _scaleY_. That resolved the issue an
 are rendering properly.
 
 Fixed the rendering issue with OTG also. Related to the same issue.
+
+
+----
+<br>
+

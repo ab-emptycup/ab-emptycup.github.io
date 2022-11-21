@@ -40,4 +40,29 @@ There is also the task of migrating s3 assets to azure. It also looks like I sho
 - Spent another hour trying to figure out why preemptible machines are not being started when a render request comes in. Turned out I forgot to set the appropriate preemptible tag on instances.
 - Confirmed that catalogue3d doesn't require any config update due to the migration.
 
+----
+<br>
+
+
+## November 21:
+
+There are a few tasks pending from the azure subscription migration:
+
+- Review and deallocate assets from the old subscription.
+- Copy the _render-worker-vhd_ snapshot into a storage account and create duplicate machines in other regions.
+- Resolve the permissions issue with SSH into app service in new subscription.
+
+Apart from that, there is another major change. All the cloud assets currently deployed in s3 need to be migrated to Azure Blob Storage. That would save us a big AWS bill. I'm planning to start work on this. These assets are being used by
+the production deployment. That adds some complexity.
+
+1. Write an Azure backed _Store_ class in the _emptycup3d_ backend.
+2. Create a storage account on Azure for _emptycup3d_.
+3. Copy assets from s3 to the newly created storage account.
+4. Ensure _emptycup3d_ is working with the Azure backed _Store_ connected to the _emptycup3d_ storage account.
+5. Copy all the assets from s3 to the _studio3d_ storage account.
+6. Setup a "test" deploy for the _studio3d_ app service and deploy the changes there.
+7. Ensure _studio3d:dev_ is working smoothly.
+8. Deploy the update to _studio3d:prod_.
+
+
 
