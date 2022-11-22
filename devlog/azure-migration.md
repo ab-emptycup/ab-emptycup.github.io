@@ -80,6 +80,53 @@ Now trying to copy the s3 assets to studio3d storage account. Luckily, I have al
 
 Figured that out now. I missed that _azcopy_ was using AD account credentials. So, I had to add permissions on that account and not the service principal. Did that and now the copy is working with some good numbers ~1300Mb/s.
 
+----
+<br>
+
+
+## November 22:
+
+
+After more consideration, I decided to avoid the _emptycup3d_ bypass and directly work on _studio3d_.
+For two reasons:
+
+1. I may want to implement the _Store_ differently in _emptycup3d_.
+2. I avoid unnecessary delay in migration.
+
+With that resolution, I am trying to setup a local deployment for _studio3d_ where I can test the changes.
+I had recently deleted the _studio3d_ containers on my local docker to avoid delay's in updates.
+Not sure, if that was too drastic and if that was the fix. Having to rebuild the _studio3d_ containers again now.
+
+- Ran into the issue that netlify was expecting node 14.0+ and we were using _node:12-buster-slim_. Updated it now. Building the containers took about 20 minutes.
+- Fixed an issue with _artist-app_ build process getting triggered infinitely.
+- Fixed an issue with frontend making API requests to production server.
+- Fixed an issue with using SSL for dev API.
+
+Facing issues with CORS. Apparently CORS headers are getting set twice. CORS is supposed to get set by the nginx proxy when it receives a request to the backend. I also added _flask-cors_ in the backend itself. That might be causing this issue:
+  1. Disable CORS in the backend.
+  2. Ensure the request is going through the nginx proxy.
+  3. Double check the hostname for the api
+
+Removed nginx from the deployment setup. Website has be to accessed at port 5000 & API is on port 8000. Website connects directly to port 8000 for API request. API has CORS enabled for debug environment. The last change in the API may have to be
+merged into master. That fixes the CORS issues.
+
+Next up are some errors with the local db not being up to date with production. Trying to fix that now by deleting the tables in the local db and import the structure of the prod db first and then importing a minimal catalogue. Table delete taking a lot of time. I force quit twice already. I remember having a similar issue last time. In fact, I remember going through this
+entire ordeal once before, but I think I was iffy in committing the changes.
+
+After a lot of headache, finally got the DB setup properly. I had force quit SequelAce because it got hung. But, that left an
+orphaned mysql process that had a lock on a table. So, when I try to delete that table again or drop the database, it was waiting for the sleeping process to release the lock. To fix this:
+
+1. Opened a shell in the db container: `docker exec -it $(docker ps -q -f EXPOSE=3306) /bin/bash`
+2. Logged into the db using the _mysql_ command: `mysql -u root -p`
+3. Listed all the processes: `show full processlist`
+4. Killed each process: `kill <id>`
+5. Dropped the database: `drop database ecdb`
+6. Recreated the database: `create database ecdb`
+
+Imported the structure of the prod db. Then imported the mini-repo.
+
+
+
 
 
 
