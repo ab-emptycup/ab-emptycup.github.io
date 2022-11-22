@@ -64,5 +64,31 @@ the production deployment. That adds some complexity.
 7. Ensure _studio3d:dev_ is working smoothly.
 8. Deploy the update to _studio3d:prod_.
 
+- After some consideration, I think it makes more sense to prototype _emptycup3d_ with _studio3d_ storage account.
+- Found an implementation for Azure blob storage already in the codebase, but unused.
+- Fixed some issues with the existing Azure Blob Store implementation.
+
+Changed the authentication mechanism to use DefaultAzureCredential.
+There is also a broken _test_az_store.py_. I revamped it and tried to test the store.
+The test failed saying that the request didn't have the permission. But it succeeded in creating the container.
+Now for me to assign the right permissions, I need to know which credentials the test is using.
+_DefaultAzureCredential_ quietly uses a long chain of fallbacks from environement variables, signed in accounts to browser level sign in. I didn't get any prompt, but my environment is already very complicated with multiple active azure subscriptions, multiple accounts, multiple service principals and mulitple environment configs. So, this _DefaultAzureCredential_ is not a great idea for me. Now switching to an _EnvironmentCredential_.
+
+Made the changes and the auth issue was resolved. Ran the azure store test successfully.
+
+Now trying to copy the s3 assets to studio3d storage account. Luckily, I have already setup _azcopy_ when I was exploring this last time. But, I'm still having some troubles in setting the correct access permissions for the service principal. I had already added _Storage Blob Data Contributor_ and now _Storage Blob Data Owner_. Still the copy command is failing with 403. It was mentioned that role assignments may take upto 5 minutes to reflect on requests. Waiting for that now.
+
+Figured that out now. I missed that _azcopy_ was using AD account credentials. So, I had to add permissions on that account and not the service principal. Did that and now the copy is working with some good numbers ~1300Mb/s.
+
+
+
+
+
+
+
+
+
+
+
 
 
