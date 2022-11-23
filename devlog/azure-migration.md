@@ -151,3 +151,20 @@ I decided to by drop the _exists_ check. It doesn't make sense in the code anywa
 The store seems to be working now. But, the issue is that the db has the resource refs hardcoded. This means for example
 that a furnishing record has the s3 url for the thumbnail preview hardcoded in a column. I'm not too inclined to perform
 a large database migration on the production db. I'd rather patch the old codebase for _studio3d_ and implement cleanly in the new _emptycup3d_ codebase. Working on the patch now.
+
+Before I started working on the patch. I committed the dev environment setup this time. Further to avoid any confusions, I cleaned up all the branches in the main repo and the submodules. Now, there are only 2 branches:
+
+1. _studio3d_ which is the production branch live on [beta.studio.emptycup.in]()
+2. _master_ which is the main development branch. I don't think I want to deploy this publicly. Not sure yet.
+
+Anyways, with a cleaner setup, its time to start working on the _s3-abs_ udpate. Making a list of all the places where
+the refs need to be patched:
+
+This feels like wading through a swamp. I added a *patch_ref()* call to _AssetStore_. I used that to update *Layout.to_json()*. But testing any changes is a problem because the API service is not reloading after changes. After a lot of debugging, I realised that an environment variable *ENABLE_GUNICOR_RELOAD* is unset. But, the variable is being set in _docker-dev.yml_. I realised I need to take a break before I lose my gumption.
+
+
+
+
+
+
+
