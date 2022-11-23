@@ -125,17 +125,29 @@ orphaned mysql process that had a lock on a table. So, when I try to delete that
 
 Imported the structure of the prod db. Then imported the mini-repo.
 
+Before I start working on migrating the codebase to use Azure blob storage, I want to commit the working dev environment.
+Started updating the submodules. Submodules are just a pain. For every update, I have to update 3 repositories in both _production_ branch as well as _dev_ branch. Yuck!
 
+I realised why I felt like having done all of the dev setup work before. I did all of that earlier in a different branch in the submodule. The submodule branch wasn't on dev and I didn't realise that was the case and made all the changes again in
+the _studio3d_ branch. This is really sad. To imagine the team put up with this for so long...I'm amazed at their patience and stupidity.
 
+Testing the dev deployment afresh just once more before moving on...Done.
 
+- Moved the _store_ package changes from _emptycup3d_ to _studio3d_.
+- Installed the dependencies manually. Have not updated the _requirements.txt_ yet.
 
+Ran into an error: _ContainerClient has no attribute 'exists'_. I'm using the _exists()_ method to check if the container
+already exists. This step was not there in the _store_ implementation earlier. I added it now. The wierd thing is that
+Azure's documentation clearly shows that _exists_ is a method on the _ContainerClient_ and the same code worked in the
+other repository. This might be an issue with the package version.
 
+----
+<br>
 
+## November 23:
 
+I decided to by drop the _exists_ check. It doesn't make sense in the code anyways. I also get to bypass this wierd 'no attribute _exists_' error.
 
-
-
-
-
-
-
+The store seems to be working now. But, the issue is that the db has the resource refs hardcoded. This means for example
+that a furnishing record has the s3 url for the thumbnail preview hardcoded in a column. I'm not too inclined to perform
+a large database migration on the production db. I'd rather patch the old codebase for _studio3d_ and implement cleanly in the new _emptycup3d_ codebase. Working on the patch now.
