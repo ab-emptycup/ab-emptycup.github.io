@@ -179,6 +179,13 @@ Noticed that the _master_ branch and _studio3d_ branch may be out of sync. That 
 
 - Got the layout save working after making a small fix in the _store.patch_ref()_ function.
 - Fixed CORS issue on the blob service by adding permissions.
+- Got Layout 3D working
+- Got Furnishings working both in add furnishings & choose colors
+- Got Materials working
+
+Only unsure about woodworks now. But that should be working as well. Just need to be double check regarding missing assets.
+
+
 
 
 
