@@ -179,7 +179,6 @@ Noticed that the _master_ branch and _studio3d_ branch may be out of sync. That 
 
 - Got the layout save working after making a small fix in the _store.patch_ref()_ function.
 - Fixed CORS issue on the blob service by adding permissions.
--
 
 
 
