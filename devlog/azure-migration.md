@@ -160,10 +160,26 @@ Before I started working on the patch. I committed the dev environment setup thi
 Anyways, with a cleaner setup, its time to start working on the _s3-abs_ udpate. Making a list of all the places where
 the refs need to be patched:
 
-This feels like wading through a swamp. I added a *patch_ref()* call to _AssetStore_. I used that to update *Layout.to_json()*. But testing any changes is a problem because the API service is not reloading after changes. After a lot of debugging, I realised that an environment variable *ENABLE_GUNICOR_RELOAD* is unset. But, the variable is being set in _docker-dev.yml_. I realised I need to take a break before I lose my gumption.
+This feels like wading through a swamp. I added a *patch_ref()* call to _AssetStore_. I used that to update *Layout.to_json()*. But testing any changes is a problem because the API service is not reloading after changes. After a lot of debugging, I realised that an environment variable *ENABLE_GUNICORN_RELOAD* is unset. But, the variable is being set in _docker-dev.yml_. I realised I need to take a break before I lose my gumption.
+
+----
+<br>
 
 
 
+## November 24:
+
+Fixed that issue. It turns out that there was another place where this environment variable was being reset. Got reload working for Gunicorn. Then ran into another nasty issue with Gunicorn's iNotify system failing on reload. Got tired of this and replaced Gunicorn with the flask development server in the dev environment. That got me back the issue of patching
+the store URLs.
+
+Ran into the issue of Flask not reloading on changes. Spent another hour trying to figure out why. Probably because making
+changes in the host system doesn't trigger file change events inside the container os. Took a while for me to figure that one out. Anyways, removed flask from supervisord setup and started running it directly from the terminal inside the docker container. If there's an update, I can ctrl+c & rerun the command with the added bonus that the logs are directly visible in the terminal instead of the docker dashboard.
+
+Noticed that the _master_ branch and _studio3d_ branch may be out of sync. That means, I'll have to rebase _master_ on _studio3d_ before merging. I'm afraid that might not be straight forward.
+
+- Got the layout save working after making a small fix in the _store.patch_ref()_ function.
+- Fixed CORS issue on the blob service by adding permissions.
+-
 
 
 
