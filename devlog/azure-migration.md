@@ -185,6 +185,16 @@ Noticed that the _master_ branch and _studio3d_ branch may be out of sync. That 
 
 Only unsure about woodworks now. But that should be working as well. Just need to be double check regarding missing assets.
 
+----
+<br>
+
+
+## November 25:
+
+- Enabled CDN on Azure for the storage account.
+- Added CDN functionality to ABS based AssetStore class.
+- Added _cdn_ to config.
+
 
 
 
