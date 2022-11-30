@@ -195,8 +195,45 @@ Only unsure about woodworks now. But that should be working as well. Just need t
 - Added CDN functionality to ABS based AssetStore class.
 - Added _cdn_ to config.
 
+Incomplete day. Could only clock 2 hours today.
+
+----
+<br>
+
+
+## November 30:
+
+- Fixed issues with CDN functionality within AssetStore & tested locally.
+- Updated _master_ in repositories and submodules accordingly. Pushed submodules to remote.
+- Cleaned up some stale config / deployment settings.
+- Rebased on _studio3d_ branch.
+- Created a _master_ slot in Azure App Service for dev deployment.
+- Created a github action to publish _master_ as _studio:master_ on Azure container registry.
+
+To publish _master_ also, I need to setup a frontend build as well. I'm starting to wonder whether a separate _dev_ slot is
+even needed. Updates to prod will be more stressful for sure. But, I don't expect to make too many updates anyway. Even if I do setup a _dev_ deployment, the diff between _dev_ and _prod_ will again be _non trivial_. So, what's the point?
+
+I have to update the *config_stage.py* first. Then, I'll have to finish rest of the migration tomorrow morning. Recopy all the assets from s3 with --overwrite=ifSourceNewer and then push changes from the local _studio3d_ branch. Restart _studio3d_ app. Test.
 
 
 
+
+## December 1:
+
+- Started running _azcopy_ yesterday afternoon. It has been 16hrs+. It is still running. The --overwrite=ifSourceNewer seems to be a very expensive operation.
+- Updated the store bucket names in *config_stage.py*
+- Added automatic updation to the render worker scripts.
+
+To push these changes to production:
+
+1. Make clean commits in submodules.
+2. Update Studio with the latest submodule references.
+3. Push submodules to origin.
+4. Push Studio to origin triggering the _studio:prod_ image build through github action.
+5. Restart the azure app service.
+6. Test the [beta.studio.emptycup.in]() endpoint manually.
+7. Preempt render worker shutdown and update codebase.
+8. Disable render worker preemption. Shutdown.
+9. Test renders.
 
 
