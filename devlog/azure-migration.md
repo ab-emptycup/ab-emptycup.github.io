@@ -215,7 +215,8 @@ even needed. Updates to prod will be more stressful for sure. But, I don't expec
 
 I have to update the *config_stage.py* first. Then, I'll have to finish rest of the migration tomorrow morning. Recopy all the assets from s3 with --overwrite=ifSourceNewer and then push changes from the local _studio3d_ branch. Restart _studio3d_ app. Test.
 
-
+----
+<br>
 
 
 ## December 1:
