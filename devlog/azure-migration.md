@@ -236,4 +236,15 @@ To push these changes to production:
 8. Disable render worker preemption. Shutdown.
 9. Test renders.
 
+Issues while testing deployment:
 
+- Woodwork maps have not yet been synced. So, map images are not loading. I started a second _azcopy_ instance specifically for woodwork maps which has been running for a while. There are arround 490k maps which is unbelievable. Warrants some investigation.
+- Layout save was failing. On connecting to the container & checking logs, it appeared that AzureIdentity was failing because of environment variables not being set properly. Updated that and published the image again.
+- Themes had hardcoded refs to textures. While testing, I didn't run into this issue because I was testing with new projects as the DB was empty. I patched the themes in code to use the updated Azure Edge refs.
+- Ran into an ugly patch where texture refs were being patched to get thumbnails for web and HD for renders. Updated that patch to only use Azure Edge refs.
+- Updated all hardcoded _ecdn.in_ refs in the frontend codebase.
+- Ran into the issue of a lot of .ktx thumbnail resources 404ing. Tried to dig into the root cause. Found that these resources were not present even in the source buckets. Not sure why that is. Left it be for now.
+- A bug in patching woodwork side refs was blocking 3D model load. Fixed it and am now able to see the 3D model load properly in production.
+- Render previews are loading properly as well.
+
+The s3 to ABS transfer is still happening though.
