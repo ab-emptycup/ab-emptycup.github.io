@@ -249,3 +249,31 @@ Issues while testing deployment:
 - Render previews are loading properly as well.
 
 The s3 to ABS transfer is still happening though.
+
+
+----
+<br>
+
+## December 2:
+
+Yesterday turned out to be a real mess.
+
+I figured the _azcopy_ was taking such a long time because AWS must have throttled our S3 API requests. Anyway, the transfer was happening very slowly and designers started complaining that their recent projects are not accessible. This was because the transfer was not complete. After explaining the situation to them, I got them to wait till 7pm. Luckily by then the transfer was complete.
+
+Then suddenly I realised that I hadn't updated the code in the render worker machines. When they get the render request, they'd try to render using the old _AssetStore_ and the required assets would not be in that store. Even if they were, the worker would save the renders in the old store, so the API would think that the job was finished but the render asset is not present. Whatever happened, the renders were failing.
+
+So, I once again pacified the customers and logged into each of those render workers that shutdown automatically by placing render requests and interrupting the shutdown before the render request is finished. Then I pulled the latest code and updated the submodules. Even after that renders were failing. So, I tracked the logs while the render requests were processed and it turned out initially that I hadn't set the right environment vars for Azure AssetStore.
+
+Then I ran into an issue with one of the component model loads failing because of issue with decoding the model file. On checking in the store, I found out that the object was gzip encoded but content headers were not setup. I backtracked to see which bucket that came from. Then I figured out how to set the content headers for all the objects in that s3 bucket and set them. Then I copied them into ABS again to overcome that issue. Even after doing this, I struggled for a long time because the earlier corrupt object was already cached and was being reused.
+
+Then I ran into another issue where one of the component model files was corrupt. That broke the load process. I checked that the blob was corrupted. Then I checked that the original object in the s3 store was also corrupt. That can't be...!
+
+It occured that there may be an object with the same name in another bucket that not corrupt but was being overwritten by the corrupt copy. I had merged buckets corresponding to staging, devel and prod, when moving from S3 to ABS. It turned out that the object with the same name in the _devel_ bucket was not corrupt. So, for this one instance _-devel_ buckets were actually being used in _stage_ as well. After calmly pushing away a sense of infuriation, I _azcopy_'ed the devel bucket overwriting the corrupt objects.
+
+With that and some divine luck, the renders started working a couple of hours past my usual bed time.
+
+Today, I moved the assets for [epicdesigns.co.in] to Azure Blob Storage. Then enabled CDN. Updated the minified code to use the new refs. Tested that the site was working properly.
+
+
+----
+<br>
