@@ -277,3 +277,21 @@ Today, I moved the assets for [epicdesigns.co.in] to Azure Blob Storage. Then en
 
 ----
 <br>
+
+
+## December 3:
+
+It is clear to me now that I drastically underestimated the disruption this S3 migration would cause. I had another firefight last night.
+
+There was an issue with some particular project not loading. While debugging, it suddenly occured to me that I had totally
+forgotten about [catalogue.emptycup.in](). That system still uses the old AssetStore! That means any components uploaded will be added to the db, but the assets will not be available.
+
+I immediately notified both teams of this issue. And started making changes in catalogue3d. Catalogue 3D doesn't even have a good dev setup due to the incompatibility of blender with the docker containers on Mac M1!
+
+1. First I updated the _emptycup_ submodule to latest _master_ which contains the AssetStore changes, _config_ updates for stores endpoints etc.
+2. Then I removed the credentials for AWS and added the same for AZURE in the Dockerfile.
+3. Pushed to production and followed the container provisioning logs on Azure. Warm up request for the container was not answered for more than 2 minutes. On SSHing into the container and following the logs, found out that I forgot to add dependency for AzureIdentity that was breaking the build. Added that and pushed again.
+4. Catalogue 3D build and deploy process is very time taking. Assimp module gets compiled from source and the entire process takes around 8-10min. This is especially painful due to the lack of a proper dev setup. This time had issue with a couple of pip packages not being installed. Not sure why they're not part of the requirements (of which there are 2). Installed them manually.
+5. Turned out that _catalogue3d_ used _devel_ environment and the config for one of the stores for saving furnishing in _devel_ was not right. Fixed that config. Committed submodule. Updated main repo. Pushed both and tested again. Finally, upload seemed to have succeeded. Verified the entry in DB successfully. But the furnishing didn't show in the UI yet. Figured that that was due to the multilevel cache.
+
+
