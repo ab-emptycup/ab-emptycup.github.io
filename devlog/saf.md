@@ -15,3 +15,13 @@ Just a fun side project for convenience and leisure. This is a log of scripting 
 - Print all the extracted event details in a table.
 
 -----
+
+- Filtered events by date.
+- Parsed timings into 2400 format.
+- Tabulated events sorted by start.
+
+-----
+
+- Tagged exhibitions based on event duration
+- Created a class for "Schedule"
+
