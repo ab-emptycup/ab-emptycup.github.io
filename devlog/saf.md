@@ -24,4 +24,15 @@ Just a fun side project for convenience and leisure. This is a log of scripting 
 
 - Tagged exhibitions based on event duration
 - Created a class for "Schedule"
+- Refactored script to OOP. OOP may be a better model for scripting modules.
+- Implemented charting functionality with CSV support
 
+-----
+
+- Got the chart organised into event columns.
+- Improved printing
+- Better code organisation.
+
+This is workable at this point.
+I can now make good sense of the schedule and plan sensibly.
+May be a few useful additions here and there...
