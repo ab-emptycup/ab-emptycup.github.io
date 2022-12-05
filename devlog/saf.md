@@ -15,12 +15,14 @@ Just a fun side project for convenience and leisure. This is a log of scripting 
 - Print all the extracted event details in a table.
 
 -----
+<br>
 
 - Filtered events by date.
 - Parsed timings into 2400 format.
 - Tabulated events sorted by start.
 
 -----
+<br>
 
 - Tagged exhibitions based on event duration
 - Created a class for "Schedule"
@@ -28,6 +30,7 @@ Just a fun side project for convenience and leisure. This is a log of scripting 
 - Implemented charting functionality with CSV support
 
 -----
+<br>
 
 - Got the chart organised into event columns.
 - Improved printing
