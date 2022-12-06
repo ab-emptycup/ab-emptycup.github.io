@@ -33,5 +33,8 @@ Started working on Dimension Editor.
 
 - Got the UI control to adjust position while the component is being updated.
 - Cleaned up the code and fixed a couple of corner cases.
+- Got scale controls to switch off if the component is too small.
+- Got side corners to render in front view of adjacent sides.
+- Fixed an issue with DecorGallery not toggling off from the AddPanel.
 
 
