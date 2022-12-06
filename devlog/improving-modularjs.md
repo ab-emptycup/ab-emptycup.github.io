@@ -25,3 +25,13 @@ Started working on Dimension Editor.
 - Got unit conversion working on the panel
 - Got the edit inputs to update the component with undo.
 
+
+-----
+<br>
+
+## December 6:
+
+- Got the UI control to adjust position while the component is being updated.
+- Cleaned up the code and fixed a couple of corner cases.
+
+
