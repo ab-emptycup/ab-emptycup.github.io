@@ -38,3 +38,9 @@ Started working on Dimension Editor.
 - Fixed an issue with DecorGallery not toggling off from the AddPanel.
 
 
+----
+<br>
+
+## December 8:
+
+
