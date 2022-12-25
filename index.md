@@ -1,12 +1,12 @@
 ---
 layout: home
 ---
-Upcoming - [v2 Release](/devlog/v2-release)<br>
 
-Ongoing - [Studio Maintenance](/devlog/studio-maintenance)<br>
-Ongoing - [Improving modularjs](/devlog/improving-modularjs)<br>
-Ongoing - [Student Program](/devlog/ecsp22)<br>
-Ongoing - [Serendipity Arts Festival](/devlog/saf)<br>
+
+December, 2022 - [Regroup](/devlog/december-regroup)<br>
+December, 2022 - [Studio Maintenance](/devlog/studio-maintenance)<br>
+December, 2022 - [Improving modularjs](/devlog/improving-modularjs)<br>
+December, 2022 - [Serendipity Arts Festival](/devlog/saf)<br>
 
 November, 2022 - [Rewriting modularjs](/devlog/rewriting-modularjs)<br>
 November, 2022 - [Migrating Azure deployment](/devlog/azure-migration)<br>
