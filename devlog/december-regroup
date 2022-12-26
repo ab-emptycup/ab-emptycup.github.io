@@ -3,6 +3,7 @@ layout: page
 title: December Regroup
 ---
 
+
 This is a log of regroup efforts during the last week of December after a 2 week off due to personal commitments.
 
 Things to do:
@@ -11,3 +12,19 @@ Things to do:
 - Add export links for woodworks.
 - Review all issues on Github Project.
 - Prepare TODO for v2 release.
+
+### 26 December:
+
+First assessing the environment and resetting.
+
+- Fixed issue _azure-identity_ python package not being installed.
+- Cleared a long pending issue with an ugly _requirements-py3.txt_.
+- Verified that the Woodwork Save issue not occuring now. Not sure what caused/fixed it.
+
+- Noticed an issue with scaling boxes with partitions using the dimension editor.
+- Noticed that box snapping off by an inch when snapping to corners (boxes on the other side).
+
+- Fixed issue with scaling boxes with partitions when using the dimension editor.
+- Fixed issue with improper box snapping at corners.
+
+
