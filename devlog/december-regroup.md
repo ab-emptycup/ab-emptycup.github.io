@@ -36,3 +36,34 @@ First assessing the environment and resetting.
 - Ran into a strange issue with _api_ object not initializing on the frontend. Wasted some time testing a bunch of things. Finally, the issue got fixed automatically, by creating a new branch and testing there. Still not clear what caused it or how it got fixed.
 - Noticed an issue with dressing section rendering. It was rendering white. Fixed it now.
 - Noticed an issue with external drawer rendering also. It was erroring out on render. Fixed it now.
+
+
+
+----
+<br>
+
+### December 28:
+
+Evaluating must fix issues before release:
+
+- Not able to select overlapping room
+- Click and scale not working for rooms
+- 8" discrepancy with floors
+- Main entrance door
+- Balcony scaling
+- Floorplan 3D preview taking a lot of time.
+- Railing: Glass, Steel, Concrete
+- Save button gets stuck in loading
+- Spacing above "No woodworks. Add in 2D."
+- Reduced margin for woodwork map
+- Delete woodwork partitions
+- Automatically add hotspot near entrance.
+- Import furnishings
+
+This is what I found till drafting floorplan. Apart from this, there's more on the backend:
+
+- Refactor _AssetStore_
+- Remove _ref_ columns from DB.
+- Remove theme related code from the backend.
+- Add "TimeTaken" as a render column.
+- Setup _emptycup3d.azuredge.net_
