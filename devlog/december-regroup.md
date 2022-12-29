@@ -55,15 +55,30 @@ Evaluating must fix issues before release:
 - Railing: Glass, Steel, Concrete
 - Save button gets stuck in loading
 - Spacing above "No woodworks. Add in 2D."
-- Reduced margin for woodwork map
+- Reduce margin for woodwork map
 - Delete woodwork partitions
 - Automatically add hotspot near entrance.
 - Import furnishings
+- Fix dressing section composition.
+
 
 This is what I found till drafting floorplan. Apart from this, there's more on the backend:
 
 - Refactor _AssetStore_
 - Remove _ref_ columns from DB.
 - Remove theme related code from the backend.
-- Add "TimeTaken" as a render column.
+- Add "TimeTaken" as a render table column.
 - Setup _emptycup3d.azuredge.net_
+
+
+----
+<br>
+
+### December 29:
+
+Today, I'm going to start with getting the composition for the Dressing section to work.
+Then, I will get internal sections working using a box level UI control.
+
+- Got dressing section composition working properly. Turned out to be not so complicated as I had feared.
+- Implemented the door toggle UI control. Functionality not yet implemented.
+-
