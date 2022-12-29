@@ -81,4 +81,3 @@ Then, I will get internal sections working using a box level UI control.
 
 - Got dressing section composition working properly. Turned out to be not so complicated as I had feared.
 - Implemented the door toggle UI control. Functionality not yet implemented.
--
