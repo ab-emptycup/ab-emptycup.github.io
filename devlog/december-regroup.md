@@ -81,3 +81,22 @@ Then, I will get internal sections working using a box level UI control.
 
 - Got dressing section composition working properly. Turned out to be not so complicated as I had feared.
 - Implemented the door toggle UI control. Functionality not yet implemented.
+
+----
+<br>
+
+### December: 30
+
+Neglected logging :|
+
+
+----
+<br>
+
+### December 31:
+
+- Fixed issue with component renderers losing state.
+- Fixed issue with woodworks components lacking id
+
+* Internal Drawer section is not working
+* Loft.onMouseMove is not working
