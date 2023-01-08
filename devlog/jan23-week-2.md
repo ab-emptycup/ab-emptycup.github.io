@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Jan 2023 - Week \#2
+title: Week #2
 ---
+Jan 8 - Jan 15 / 2023<br>
 
 Most of last week was spent in planning. Essential overhead. This week I want to focus on publishing.
 
