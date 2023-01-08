@@ -24,4 +24,6 @@ Noticing a bunch of random bugs that show up and dissappear randomly:
 - Component controls becoming invisible after first use.
 - Furnishings not being added onClick from the DecorGallery
 
-Not sure if these are issues related to Svelte. Unlikely.
+Not sure if these are issues related to Svelte. Unlikely. Anyways, moving on.
+
+Next immediate issue to address is the issue with component controls becoming invisible after first use. Debugging that now.
