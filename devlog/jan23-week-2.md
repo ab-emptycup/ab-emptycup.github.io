@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Week #2
+title: Jan Week 2
 ---
-Jan 8 - Jan 15 / 2023<br>
+
+Jan 8 - Jan 15<br>
+Week#: 2/52<br>
 
 Most of last week was spent in planning. Essential overhead. This week I want to focus on publishing.
-
 
 ### Sunday:
 
@@ -34,3 +35,34 @@ Before starting that, I fixed a couple of open issues on ModularJS. Then, I reba
 - Cleaned up environment config: EMPTYCUP_ENVIRONMENT = (development, production)
 - Created _emptycup3d_ storage account on Azure
 - Fixed issues with _eccli_ after the config update
+
+
+### Monday:
+
+Reviewing week's sprint: <br>
+Total hours planned: *44*<br>
+Total days available: *5*<br>
+
+Todo:
+
+- Setup furnishings database
+- Setup materials database
+- Deploy on [emptycup3d.com]()
+- Setup render workers
+- Refresh woodworks in 3D after save
+- Fix broken scroll for ModularDesignModal
+- Enable deleting partitions
+- Fix move control for ledges
+
+Today:
+
+* Patched Furnishing table to drop ref columns in favour of a _refkey_.
+* Ported `ec db reinit` and reinitialized the dev db.
+* Patched Material table to drop *texture_ref* column in favour of a _Material.refkey_.
+* Patched Layout table to drop _*\_ref_ columns in favor of a _Layout.refkey_.
+* Patched Woodwork table to drop _Woodwork.refs_ column in favor of _Woodwork.refkeys_.
+
+That was about 4 hours of work today excluding planning. Way below my expectation.
+Productivity was B class. Can do better.
+
+

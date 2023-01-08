@@ -1,6 +1,6 @@
 ---
 layout: page
-title: January 2023 - Week #1
+title: January 2023 - Week 1
 ---
 
 
