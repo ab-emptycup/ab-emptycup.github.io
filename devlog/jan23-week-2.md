@@ -66,7 +66,7 @@ That was about 4 hours of work today excluding planning. Way below my expectatio
 Productivity was B class. Can do better.
 
 
-### Monday
+### Tuesday:
 
 Testing the _refkey_ changes. Fixed a whole bunch of issues to get things working after the changes.
 
@@ -75,3 +75,11 @@ This looks like it is going to be more complicated than I thought.
 Is this a one time thing or do I need to keep doing this. If latter, I need to figure out a way to connect to both the old database and the new database.
 
 
+### Wednesday:
+
+- Export old furnishings database as tsv.
+- `ec tools s2e furns` now takes a `--sourcep` optional input to load the tsv file.
+- Implemented furnishing import and tested.
+- Implemented furnishing asset copy on import and tested.
+- Filtered all _mini-repo_ components.
+- Migrated all the filtered components (count: 2331) to new db.
