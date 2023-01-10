@@ -66,3 +66,12 @@ That was about 4 hours of work today excluding planning. Way below my expectatio
 Productivity was B class. Can do better.
 
 
+### Monday
+
+Testing the _refkey_ changes. Fixed a whole bunch of issues to get things working after the changes.
+
+Setup `ec tools s2e furns` to import furnishings from _studio3d_ to _emptycup3d_.
+This looks like it is going to be more complicated than I thought.
+Is this a one time thing or do I need to keep doing this. If latter, I need to figure out a way to connect to both the old database and the new database.
+
+

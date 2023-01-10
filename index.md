@@ -2,8 +2,8 @@
 layout: home
 ---
 
-January, 2023 - [Week 1](/devlog/jan23-week-1.md)<br>
-January, 2023 - [Week 2](/devlog/jan23-week-2.md)<br>
+January, 2023 - [Week 1](/devlog/jan23-week-1)<br>
+January, 2023 - [Week 2](/devlog/jan23-week-2)<br>
 
 
 December, 2022 - [Regroup](/devlog/december-regroup)<br>
