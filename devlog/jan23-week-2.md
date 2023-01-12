@@ -74,6 +74,7 @@ Setup `ec tools s2e furns` to import furnishings from _studio3d_ to _emptycup3d_
 This looks like it is going to be more complicated than I thought.
 Is this a one time thing or do I need to keep doing this. If latter, I need to figure out a way to connect to both the old database and the new database.
 
+Today was a long day with 7.5 hours of productive work.
 
 ### Wednesday:
 
@@ -83,3 +84,47 @@ Is this a one time thing or do I need to keep doing this. If latter, I need to f
 - Implemented furnishing asset copy on import and tested.
 - Filtered all _mini-repo_ components.
 - Migrated all the filtered components (count: 2331) to new db.
+
+UI still seems to be broken. Haven't dug into what the issue is yet.
+I could only manage 4 hours of productive work today.
+
+
+### Thursday:
+
+Fixed the issue with broken furnishing previews in the UI.
+
+Having issues with _theme_ because none of the materials referred to in the theme are available in the db.
+The challenge here is that even if I import materials from the old db. They wouldn't have the same IDs.
+But then that is the case with furnishings as well. So, none of the old projects would work on the new deployment.
+Then reason for material error must be that the materials used in the base house model are also not present in the db.
+
+So, I have to first import the base materials. Then replace the references to these base materials everywhere in the code with IDs of the newly imported materials. Doesn't feel like fun :'(
+
+1. Search where the default theme / materials are being set.
+2. List all the default materials.
+3. Implement script to import materials from studio3d to emptycup3d.
+4. Import all the default materials into emptycup3d.
+5. Test that the 'theme' functionality is properly working.
+
+- Done dumping furnishings
+- Done loading the old db into `ec tools s2e mats`
+- Implemented importing material
+- Implemented texture copy
+
+Long day about 7 hours of work. Quality of time is not too good.
+Having troubles maintaining stable energy levels through out the day.
+
+### Friday
+
+- Fixed a few issues with ref copy
+- Struggled a bit with filtering materials.
+- Could not decide how to deal with base materials. Partilly implemented an importer.
+- Decided to import the whole materials database.
+- Fixed issue with _hash_ column being UNIQUE in the Material table.
+- Dropped 2 hours of import progress after realising thumbnails were not being copied properly.
+- Restarted import process after fixing issues with log update. Been running for 3 hours by EoD.
+
+Today was about 3 hours of work. Not able to keep up with the intensity and consistency needed for this.
+I need to work on myself to be efficient at this.
+
+
