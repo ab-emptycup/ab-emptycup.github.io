@@ -106,7 +106,7 @@ So, I have to first import the base materials. Then replace the references to th
 4. Import all the default materials into emptycup3d.
 5. Test that the 'theme' functionality is properly working.
 
-- Done dumping furnishings
+- Done dumping materials
 - Done loading the old db into `ec tools s2e mats`
 - Implemented importing material
 - Implemented texture copy
@@ -127,4 +127,4 @@ Having troubles maintaining stable energy levels through out the day.
 Today was about 3 hours of work. Not able to keep up with the intensity and consistency needed for this.
 I need to work on myself to be efficient at this.
 
-
+### Saturday
