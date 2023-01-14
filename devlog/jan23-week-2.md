@@ -128,3 +128,18 @@ Today was about 3 hours of work. Not able to keep up with the intensity and cons
 I need to work on myself to be efficient at this.
 
 ### Saturday
+
+- Import process hung last night. Manually resumed it today. Issue recurred twice. Restarting docker, fixes it.
+- Implemented script to replace the Material.id references in the _slots_ for each furnishing with updated Material.ids.
+- Took a call with Ivy.homes regarding their use case.
+
+Managed about 4 hours of productive work. This needs to go up.
+
+### Week in review
+
+- About 35 hours in productive work.
+- Quality of time spent is also mediocre. Feels like my 50%.
+- Cant be more productive without a strong personal foundation.
+- Sleep. Food. Workout. Routine.
+- Underestimated the hours needed for both furnishings & material import. (24 vs 36). 50% off.
+- Overestimated the hours I could put in realistically.
