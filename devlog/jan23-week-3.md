@@ -6,7 +6,41 @@ title: Jan Week 3
 Jan 15 - Jan 22<br>
 Week#: 3/52<br>
 
+### Hour 12:
 
+Looks like _vite_ dependency was updated. The recommended way to run the dev server also seems to have changed.
+Earlier I was using _svelte-kit_. I'm not sure if that will work now. I also forgot to rebuild the container.
+After rebuilding the container, I'm seeing error messages that make a little more sense now. It seems the build now breaks
+because of lack of the netlify adapter. But that package must already have been included with _adapter-auto_ package.
+
+Debugging further to see what's going on.
+
+
+### Hour 11:
+
+The migration guide recommends to update to the last version before 1.0.0 and test the app for better warnings. Being new to
+_npm_ and _package.json_, it took me a while to figure out a way to update the _@sveltejs/kit_ package to specific versions.
+Googling was painfully irrelavent. Finally figured it out. Before updating had to run `npx svelte-migrate routes` to update the routes to the new _+page.svelte_ convention. Then updated _@sveltejs/kit_ to _1.0.0-next.588_ which was the last version before _1.0.0_.
+
+But unfortunately that breaks the build. Now debugging to see what the issue is. Error message is not too clear: _Error: Function called outside component initialization_ from loading the homepage.
+
+### Hour 10:
+
+I was checking the sveltekit migration guide and got distracted into exploring Gitbook for our tutorial content. Earlier I had setup _material-for-mkdocs_ on [learn.emptycup3d.com](). But, I was not fully satisfied with it. The entire site had a very 'tech' like feeling. Gitbook does what I need much better. Bigger, more friendlier font. Better space utilisation. Multiple page layouts. Custom domain support. It doesn't do a few nice things in terms of customisation. But that might not hurt us too much. Created a sample tutorials layout to test the view and [it was looking fine](emptycup.gitbook.io).
+
+
+Anyways, this was not what I was supposed to be doing. But, I got sucked into it. Not too sorry about it though. Good find.
+
+### Hour 9:
+
+After making the config changes, the build succeeded. Then a few small changes to get the backend working without any runtime errors. But, it turned out that the frontend broke immediately after the first two pages. Svelte Kit has become stable and the entire codebase has been built on the development version before the major breaking changes that happened last year before 1.0 came out. So, the app was working on my dev machine. But failed right out on building on the server because npm pulled the latest version.
+
+So, the next step is to move to the stable release of SvelteKit. I spent some time following up on the changes. Looks like the changes are not insignificant. This is already the 7th hour of _Deploy on emptycup3d.com_ which as estimated for 4 hours and I don't imagine Svelte upgradation is going to take less than 2 days. So, another 12 hours at the very least making a grand total of 18 hours for something that was expected to be less than 4 hours comfortably. Sigh.
+
+
+
+-------
+<br>
 
 ### Hour 8:
 
