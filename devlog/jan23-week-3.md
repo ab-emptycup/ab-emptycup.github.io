@@ -6,6 +6,50 @@ title: Jan Week 3
 Jan 15 - Jan 22<br>
 Week#: 3/52<br>
 
+### Hour 20:
+
+Navigating to the deploy gives a plain _500 Internal Error_. Having some trouble trying to figure out the cause.
+There's a similar Github issue that says this could be because of accessing filesystem on a serverless environment which
+is unsupported. I didn't think I was using serverless with Netlify. But, when I checked, I found that a _Netlify function_
+had been depolyed a few minutes ago. So, for whatever reason, Sveltekit's netlify adapter was deploying an serverless route for the build. Now, I'm digging to find out why.
+
+Managed to check the function log. The issue is happening due to the @popperjs crap. I took a shot in the dark by removing
+_vite.ssr.noExternal: '@popperjs/core'_ from the _vite.config.js_ with no luck. The bigger issue for me is the netlify function. I don't want to use them. I'd much rather just have a static deployment. But, it looks like _@sveltejs/adapter-netlify_ will create a 'render' netlify function as a rule for SSR.
+
+I want to try _@sveltejs/adapter-static_ and see how that works with netlify. Vercel seems to have zero config support for that adapter and the same for netlify is forthcoming. But, I can't afford to wait for that. I need to figure out the configuration to deploy a static build on netlify myself. But, that has to be tomorrow. It's been a long 8 hour work day.
+
+
+### Hour 18, 19:
+
+Fixed npm scripts to build on netlify for production. Netlify build filesystems are case sensitive. That was producing some build errors. Fixed a tonne of file naming conventions issues due this canse sensitivity issue. Netlify build now successful.
+
+### Hour 17:
+
+Tested to see if the build is working as expected. Squashed & merged into _master_. Rebased _production_ and pushed to Github.
+
+### Hour 16:
+
+Took a hour long nap and it worked wonders. Got back and figured out what the issue was. It was a silent change in fabricjs API. Made the appropriate change and got the canvas working. Then fixed a couple of Azure config related issues.
+
+### Hour 15:
+
+Not even able to find a way to debug. Stepping through the JS code is becoming confusing because of all the Proxy objects and stepping inside fabric js. I need to take a gap, clear my head and try again.
+
+### Hour 14:
+
+No luck!
+
+### Hour 13:
+
+Installed _@sveltejs/adapter-netlify_ separately and got the build to work. But on testing the dev deploy, started seeing
+some _fabricjs_ related bugs that shouldn't have been there. I figured it must be due to _fabricjs_ getting updated
+inadvertently in the process of installing the netlify adapter. Trying to figure out a way to undo that and redo without
+updating all the dependencies. Also need to reconsider the install step while building for production.
+
+
+----
+<br>
+
 ### Hour 12:
 
 Looks like _vite_ dependency was updated. The recommended way to run the dev server also seems to have changed.
