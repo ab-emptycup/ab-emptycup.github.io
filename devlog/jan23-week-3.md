@@ -6,6 +6,48 @@ title: Jan Week 3
 Jan 15 - Jan 22<br>
 Week#: 3/52<br>
 
+### Hour 26:
+
+That was a huge mind fuck. Build was succeeding but the deploy was not working. So, I setup _vite preview_ to preview the build locally and started running into a different _500 internal server error_ issue that was being caused by _@popperjs/core_. After digging through the popperjs discussions on sveltestrap, even the temporary patches suggested there did not work. I guess, I'll have to take a break and come back to this issue. This popperjs issue has been irking since the very beginning of sveltestrap and the project isn't being maintained. So, the situation isn't ideal.
+
+
+### Hour 25:
+
+Decided to roll back commits till this issue is resovled. After 3 iterative deploys, figured the issue was the "build" directory change. I'd made a few polishes along with that change that masked the issue. Updated the build config to get the build to succeed again.
+
+But ran into a new issue now. On navigating to the deploy, a message "The page you are looking for doesn't exist." shows up.
+On checking the build folder, I figured that the build only contains one html file: `200.html` which was added as a "fallback" option.
+
+
+### Hour 24:
+
+I'm not sure what the issue is. Prerendering should be off. I have explicitly set it to _false_ at two points and the default value itself is _false_. Still the error sayes prerendering failed. May be something else is the issue and this error message is bad reporting.
+
+The error is occuring inside svelte-kit itself. `Unexpected token 'export'`. Having some trouble figuring out the root cause.
+
+### Hour 23:
+
+- Found an option for disabling prerendering completely and operating in SPA mode. That seemed more relavent to what I'm trying to do. So, configured that. Local build succeeded and the app is loading fine.
+- Deployed to Netlify. Build failed with error 'build' directory does not exist. _sveltekit_ seems to be building to _.svelte-kit_ folder and netlify was configured to look for the build in _../../build_ relative to webapp src. Fixed that.
+- Ran into some other issue where suddenly prerendering got triggered again. Not sure what caused it. Still debugging.
+
+
+### Hour 22:
+
+- Been digging around to understand what is going on. There's a detailed issue on Github on a similar issue. But, not too sure if that's my fix. But I need to understand prerendering a bit more clearly, especially prerendering dynamic routes.
+- Tried 2 ways to disable prerendering for the dynamic routes. First, by adding additional entries in _svelte.config.js_. Second, by adding separate _+layout.js_ files next each _.svelte_ file. That still didn't help.
+
+
+
+### Hour 21:
+
+- Exploring _@sveltejs/adapter-static_. Looks like it's exactly what we want. Probably more.
+- Explored [surge.sh]() in the context of hosting the build output. Generous offering.
+- Switched to _@sveltejs/adapter-static_. Build failed saying that / was not marked for prerendering. So, I added a +layout.js with `export const prerender = true`. That triggered the prerendering. But, eventually failed with the error that some routes, specfically the ones with dynamic parameters were marked for prerender but could not be reached by crawling the website.
+
+-----
+<br>
+
 ### Hour 20:
 
 Navigating to the deploy gives a plain _500 Internal Error_. Having some trouble trying to figure out the cause.
