@@ -6,6 +6,66 @@ title: Jan Week 3
 Jan 15 - Jan 22<br>
 Week#: 3/52<br>
 
+### Hour 32:
+
+- Renderer seems to be recieving a stripped down furnishing object which doesn't have the needed attributes.
+- Side note: Frontend can be cleaned up after disabling SSR. Added task.
+- Renderer is expecting the furnishing data in the render request. But frontend doesn't send it.
+- Side note: Need to create a separate route for 3D. Added task.
+- Fixed by adding the data in the initial response sent by the backend.
+- Better fix is to let Renderer figure out the right refs using the refkey. Added task.
+
+
+
+### Hour 31:
+
+Next up: Setting up rendering.
+
+- First things first, cleaned up all the local and remote branches except _master_ & _production_.
+- Tested local rendering functionality. Material application seems to be broken. Fixing that first.
+- Done. Material application now working as expected, but textures are not loading. I'll come back to it.
+- Requesting a day light preview render gives a 500. Debugging now.
+
+
+
+### Hour 30:
+
+Fixed. Issue was being caused due to not checking if house model asset exists when getting ref. Fixed now.
+
+Development and production are writing to the same storage account, which is a bit troublesome. But otherwise, production is ready. I'd consider the deployment task complete.
+
+A few todo items come to mind:
+
+- Comment code as much as poossible inline. Especially describing what's being done.
+- Separate AssetStore for production and development.
+- Move eccli.egg-info to eccli's build directory
+
+### Hour 29:
+
+- Fixed a bug in *AssetStore.get_cdn_url*
+- Loading furnishings successfully in 2D on production.
+- Layout save failing with 500.
+- Reproduced issue in development.
+
+
+### Hour 28:
+
+- Cleaned up build config & pushed.
+- Build succeeded on netlify.
+- Deploy succeeded on [emptycup3d.com]().
+- Imported latest furnishings & materials to ecdb.v2
+
+
+
+### Hour 27:
+
+First I want to confirm that this is the popperjs issue and not a consequence of bad build config on my part mainly because the error with popperjs was different if I remember right. There's a temporary patch that should work if this is really the popperjs issue. Trying that now.
+
+Applied the patch. Worked locally.
+
+----
+<br>
+
 ### Hour 26:
 
 That was a huge mind fuck. Build was succeeding but the deploy was not working. So, I setup _vite preview_ to preview the build locally and started running into a different _500 internal server error_ issue that was being caused by _@popperjs/core_. After digging through the popperjs discussions on sveltestrap, even the temporary patches suggested there did not work. I guess, I'll have to take a break and come back to this issue. This popperjs issue has been irking since the very beginning of sveltestrap and the project isn't being maintained. So, the situation isn't ideal.
