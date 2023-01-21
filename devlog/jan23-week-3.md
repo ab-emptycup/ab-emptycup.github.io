@@ -6,6 +6,14 @@ title: Jan Week 3
 Jan 15 - Jan 22<br>
 Week#: 3/52<br>
 
+This was a good week. Starting to see some semblance of productivity. Not setting too high of an expectation in terms of hours was a good call. It let me push through the week without getting anxious. 36 hours of coding seems to be my sweet spot.
+
+Hourly logging was a good idea. It let me manage pace without too many jerks.
+
+The gross misjudgement of effort needed to deploy was unfortunate. But it couldn't be helped. I'd rather have worked than spent a day planning. I'll try to be more conservative about task estimation though.
+
+
+
 ### Hour 38:
 
 - Deployed [emptycup3d.com]() successfully.

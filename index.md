@@ -2,6 +2,7 @@
 layout: home
 ---
 
+January, 2023 - [Week 4](/devlog/jan23-week-4)<br>
 January, 2023 - [Week 3](/devlog/jan23-week-3)<br>
 January, 2023 - [Week 2](/devlog/jan23-week-2)<br>
 January, 2023 - [Week 1](/devlog/jan23-week-1)<br>
