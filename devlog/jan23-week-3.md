@@ -6,6 +6,55 @@ title: Jan Week 3
 Jan 15 - Jan 22<br>
 Week#: 3/52<br>
 
+### Hour 38:
+
+- Deployed [emptycup3d.com]() successfully.
+- Tested project creation, layout save, adding furnishing, tried render preview.
+- Preview not rendered. `ec renders monitor` shows successful addition to worker queue.
+- Manager Job failed due to issue with _cloud.run_node()_
+
+
+### Hour 37:
+
+- Made 'EMPTYCUP_RENDERS_QUEUE_PREFIX' an environment varible. Everyone else derives from it.
+- Added task to setup all environment config variables in one place.
+- Tested changes locally. Cleaned up repo and committed to _renders_ branch and pushed to production.
+
+
+### Hour 36:
+
+- Successfully cleared render worker queues with `ec renders process`. Validated 2 preview renders in dev deploy.
+- Implemented `ec renders show <rid>` to get the details of a render from Render.id
+- Inconsistency in Render.status when manager errors out after enqueuing a job in a worker queue. Added task.
+
+
+### Hour 35:
+
+- Jobs were showing as missing in queue because the queue name was not right. Fixed it.
+- Jobs are now getting stuck in the Manager queue. Again, because manager was looking in the wrong queue. Fixed it.
+- Jobs are now failing in the manager queue because manager is erroring out when trying to spin up a cloud worker.
+- Fixed the issue by resetting the environment variables for _config.renders.cloud_prefix_.
+
+
+### Hour 34:
+
+- Implemented --drop for `ec renders santise` to drop orphaned records.
+- Cleaned up old records. The latest 2 records exist, that are neither orphaned nor in queue.
+
+
+### Hour 33:
+
+- Tested the local render request flow. Need to test the render job processing flow.
+- I need to setup _eccli_ from dev host to be able to use `ec renders` outside container.
+- Fixed environment issues to run `ec renders` outside container.
+- Render Job is being created in the DB, but queues are empty.
+- Fixing issues with `ec renders sanitise` first to start debugging the original issue.
+
+
+----
+<br>
+
+
 ### Hour 32:
 
 - Renderer seems to be recieving a stripped down furnishing object which doesn't have the needed attributes.
