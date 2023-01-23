@@ -6,10 +6,33 @@ title: Jan Week 4
 Jan 22 - Jan 29<br>
 Week#: 4/52<br>
 
+### Hour 5:
+
+- Setup and mounted the cache disk.
+- Changed the cache mount point from 'tmp/cache' to 'cache'.
+
+
+### Hour 3, 4:
+
+- Fixed a bunch of issues with the setup script.
+- Added devops key to the render worker.
+- Tested unsuccessfully. Rendering failed because 'tmp/cache' doesn't exist.
+
+### Hour 2:
+
+- Created `ec3d-standard-render-worker-0` in a separate resource group.
+- Added a 64GB Standard SSD cache disk to the VM.
+- Implemented a setup script for setting the worker VM.
 
 
 ### Hour 1:
 
+Getting started with setting up renders:
+
+- Fixed the issue with _cloud.run_node_ and deployed to _production_.
+- Tested rendering. Job queued in worker queue. Manager failing due to _NotImplementedError_. That error was getting triggered
+due to lack of suitable render nodes in the cloud.
+- Started adding a render worker
 
 
 ---
