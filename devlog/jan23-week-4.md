@@ -6,10 +6,47 @@ title: Jan Week 4
 Jan 22 - Jan 29<br>
 Week#: 4/52<br>
 
+
+### Hour 9, 10:
+
+- Setup the render worker again.
+- The cache disk is not auto mounted on boot. Adding the entry to fstab is still manual.
+- Fixed the script to confirm partitioning.
+- Fixed the script to add entry to fstab after confirmation.
+
+
+### Hour 8:
+
+- Fixed the issue in the script by asking the user to input the right device id.
+- Reran the script by mistake which wipes the unclean _emptycup_ folder. Unfortunately the root filesystem was mounted as cache. Since that was a duplicate mountpoint it didn't show up in _lsblk_. This ran rm -rf on the root filesystem which was mounted as _cache_ fucking up the VM.
+- Now setting up the render worker again.
+
+### Hour 7:
+
+- Renamed the render workers & queues to have prefix _emptycup3d_ instead of _ec3d_ to avoid inconsistency.
+- Created a new VM with the new prefix _emptycup3d-_
+- Moved the setup script and keys to the newly created worker.
+- Ran the setup script to setup the render worker. Failed silently.
+- Script failed. The cache disk was getting added in a different device order.
+
+### Hour 6:
+
+- Checked if the Azure cloud credentials are correct.
+- Checked if the new code is able to find VMs in the _studio3d_ deployment. It did.
+- Figured this must be a permissions issue.
+- Fixed by giving the service principal permissions to the render workers resouce group.
+- Tested the job is successfully getting queued.
+
+
+
+----
+<br>
+
 ### Hour 5:
 
 - Setup and mounted the cache disk.
 - Changed the cache mount point from 'tmp/cache' to 'cache'.
+- Renders still failing in the manager queue becase *cloud.get_nodes()* is not showing any VMs.
 
 
 ### Hour 3, 4:
