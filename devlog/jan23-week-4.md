@@ -6,6 +6,30 @@ title: Jan Week 4
 Jan 22 - Jan 29<br>
 Week#: 4/52<br>
 
+### Hour 12-20:
+
+- That was a mad effort to get the render farm working properly. Recreated the render worker half a dozen times to get things working smoothly.
+- Dropped the entire cache disk notion after over pouring 10-12 hours into it. That was very poor foresight. That choice added a tonne of complexity to the render worker's setup and startup while saving a few hundred bucks. I decided it wasn't worth it at the end and dropped it.
+- Fixed a bunch of other issues with the setup and startup scripts including issues with 'cache' and 'data' dir paths.
+- Suddenly the blender mirror went down breaking the entire setup script.
+- Changed azure vm shutdown mechanism from the old hardcoded API based method to using Azure CLI which is much cleaner.
+- Also revamped the latch to stop auto shutdown by adding a 'burst' tag to the VM on the Azure portal.
+- Tested renders successfully now.
+
+8 hour effort turned into 20 hours again :'(
+
+
+### Hour 11:
+
+- Started testing *render_worker_startup.sh*.
+- Fixed broken path to _tmp/cache_. Removed some seemingly irrelavent code.
+- Fixed a couple of issues with missing environment variables.
+- Decided to streamline the mechanism for setting environment variables.
+
+
+-----
+<br>
+
 
 ### Hour 9, 10:
 
