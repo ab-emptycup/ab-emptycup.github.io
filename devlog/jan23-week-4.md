@@ -6,6 +6,28 @@ title: Jan Week 4
 Jan 22 - Jan 29<br>
 Week#: 4/52<br>
 
+------
+<br>
+
+### Hour 23:
+
+- Fixed issue with error highlighting failing on Layout canvas.
+- Started debugging issue with layout save inconsistency
+    - Dev setup seems to be running fine.
+    - Production is running into issues of assets not updating.
+    - My best guess is that the CDN is not updating on asset save.
+    - One option is to create house models based on the layout hash and delete the old model.
+
+
+
+### Hour 21-22:
+
+- Created blog on [emptycuphq.medium.com]() after some consideration for alternatives.
+- Linked both the [blog](https://emptycuphq.medium.com) and [tutorials](https://emptycup.gitbook.io) from product.
+- Fixed issue with Switch component not changing state.
+
+----
+
 ### Hour 12-20:
 
 - That was a mad effort to get the render farm working properly. Recreated the render worker half a dozen times to get things working smoothly.
