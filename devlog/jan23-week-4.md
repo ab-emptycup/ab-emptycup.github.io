@@ -6,6 +6,45 @@ title: Jan Week 4
 Jan 22 - Jan 29<br>
 Week#: 4/52<br>
 
+### Hour 27, 28, 29, 30:
+
+EmptyCup 3D:
+    - Fixed an issue with lightmaps being loaded from old S3 stores.
+    - On digging further, found that fallback material was getting set.
+    - Textures are not being passed to the frontend after the *raw_query()* to get all materials.
+    - Patched the *raw_query()* function to add texture ref attributes whenever appropriate.
+    - Further textures are not being loaded due to the saved theme flattening the texture less materials. Worked around that.
+    - Now texture are loading properly.
+    - Noticed two issues where:
+        1. _.ktx_ versions are being requested for textures that are not available.
+        2. Some furnishings are not loading in 3D, probably due to errors in loading materials due to 1.
+
+    On further investigation, found that the furnishings are loading, but really late. May be an issue with cache / not having CDN on dev. Not sure really.
+
+
+### Hour 26:
+
+- Started debugging materials issues. Studio 3D and EmptyCup 3D.
+- Studio3D:
+    - Tested a couple of components shared in the bug report. This may be issue with new component uploads.
+    - The default material is showing up as white for a lot of components, not just newly uploaded.
+    - If there's some issue with fetching the material in the UI, the default white material is used.
+    - Gotta start with Walkin Loader to see why the fallback material is being applied.
+- EmptyCup3D:
+    - Materials seem to have textures and the texture images are accessible on the CDN.
+
+I was hoping these were related issues. But, apparently. It's a bit disorientating to pursue both threads at the same time. I'll focus on fixing the Studio3D issue first. They have been due for over 2 weeks now.
+
+
+### Hour 24, 25:
+
+- Added _AssetStore.delete_asset()_
+- Updated Layout model to md5 hash of definition as refkey.
+- Updated the column in table.
+- _Layout.update()_ now computes the new hash, saves new model composition and deletes old assets.
+- Tested on local machine successfully.
+- Evaluated hashing and testing on client. Dropped the idea to keep things simple.
+
 ------
 <br>
 
