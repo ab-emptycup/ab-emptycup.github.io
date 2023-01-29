@@ -6,6 +6,25 @@ title: Jan Week 4
 Jan 22 - Jan 29<br>
 Week#: 4/52<br>
 
+
+### Weekly review:
+
+- I got 30 hours in. Started strong. But lost the mojo in the middle. Pulled back at the end with some desparate effort.
+- Accomplished 16 hours of planned work in the 30 hours. Gross misjudgement of effort needed again.
+- The decision to setup cache disk for the render workers was wrong and easily costed an extra 10-12 hours.
+- Did not become more precise with time blocking. Went the opposite way.
+
+Major callouts are:
+
+- Don't get mentally lazy at logging.
+- Don't get dragged into work. Time block efforts to 1 hour (45+5+10) works well.
+- Avoid coding work in the afternoon. Don't use that time to make up for lost hours before lunch.
+- Start working on creatives in the afternoons.
+
+
+
+------
+
 ### Hour 27, 28, 29, 30:
 
 EmptyCup 3D:
@@ -19,7 +38,7 @@ EmptyCup 3D:
         1. _.ktx_ versions are being requested for textures that are not available.
         2. Some furnishings are not loading in 3D, probably due to errors in loading materials due to 1.
 
-    On further investigation, found that the furnishings are loading, but really late. May be an issue with cache / not having CDN on dev. Not sure really.
+On further investigation, found that the furnishings are loading, but really late. May be an issue with cache / not having CDN on dev. Not sure really.
 
 
 ### Hour 26:
