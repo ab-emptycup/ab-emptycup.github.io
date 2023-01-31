@@ -6,6 +6,72 @@ title: Jan Week 5
 Jan 29 - Feb 4<br>
 Week#: 5/52<br>
 
+### Hour 14:
+
+Considered the possibility of reordering the s3 bucket copy. But, that didn't seem like a robust solution.
+Noticed a couple of cases where that approach would fail.
+
+Decided that the best thing to do now is let the old catalogue be. But the S3 account will be closed soon. So, I decided to make a copy of the entire storage into a separate Azure storage account. Created a separate "archive" account for this on Azure and assigned the necessary roles.
+
+Crafted the scripts to perform the copy of 31 buckets in total from 3 parallel processes. That's around 1.5TB of data that needs to be moved. The copy will take some time. Even at a cumulated average of 100Mbps (which might get throttled down), the copy op will take a few hours.
+
+
+### Hour 12, 13:
+
+- Made a few changes to the patch. But ultimately decided to drop it.
+- Ran into a new issue when exploring the old catalogues. Some of the topviews are broken. Though the asset references in the db seem to be correct.
+- This is a consequence of a few bad decisions taken in the early days. Keeping _ref_s in the db is the major one. Turns out over the times, we added refs from multiple different buckets and CDN endpoints into the db. During the recent S3 to Azure migration, the buckets were copied into a single container causing overlaps between _devel_ and _prod_ buckets randomly.
+
+
+### Hour 11:
+
+- Found the issue. The default material has been replaced during the recent component material normalization.
+- Tried a patch to use the original material. Seems to be working.
+- But it seems this is not a bug. Just a bad selection of default materials.
+- On digging further, it seems the normalisation of materials was not a very popular move:
+    - Users can't differentiate the models now.
+    - Everything looks similar.
+
+I'll have to rethink the whole auto texturing idea. But, no point doing that with the old catalogues.
+I'll keep this in mind for when I start working on the new catalogues.
+
+
+### Hour 10:
+
+- Fixed the issue with the build. JS compilation was triggering build by modifying the .js files in _libs/xxx/build_
+- Started debugging the missing default material. It seems a different default material is loading. Likely from the default palette.
+
+
+### Hour 9:
+
+- Turned out that the libs were not being recompiled in the build step.
+- Added build step, but now the frontend breaks.
+- On debugging, it appears _nodemon_ is stuck in a reload loop.
+- My best guess is that the jslib build is triggering _nodemon_ which invokes build again.
+
+### Hour 8:
+
+- Got a fresh copy of the catalogues from the production db and imported.
+- Reproducing the issue of missing default materials on the dev machine. Success.
+- Not able to debug using _console.log()_ due to frontend not refreshing on code update.
+
+
+### Hour 7:
+
+Getting back to the dev setup issue. I need to address this before I can debug and fix the issue with missing defaults materials for components.
+
+- Restarted the system.
+- Disabled restart for _artist_ containers.
+- Rebuilding the _artist_ containers.
+- Got the deployment issue fixed. Forgot that the dev api needs to be run manually now.
+- Erroring out becasue the local DB is out of sync.
+
+
+### Hour 6:
+
+Wrote up my thought process for getting the user onboarding experience right. Looking to find someone with direct experience who can guide me on this.
+
+
 ### Hour 5:
 
 Investor sync up call
