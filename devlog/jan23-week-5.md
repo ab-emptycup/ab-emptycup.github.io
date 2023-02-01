@@ -6,13 +6,21 @@ title: Jan Week 5
 Jan 29 - Feb 4<br>
 Week#: 5/52<br>
 
+### Hour 23:
+
+-
+
+
+--------
+<br>
+
 
 ### Hour 22:
 
 Had a quick UX test with my wife. A couple of useful insights:
 
-- Furniture mode is needed. Room gets selected an moved suddenly.
-- First person navigation is a great challenge.
+- Furniture mode is needed. Room gets selected and moved unintentionally too often.
+- First person navigation is a great challenge. Need a simpler navigation model. Scroll is too sensitive.
 - Hanging items will also be looked for under ceilings.
 
 
