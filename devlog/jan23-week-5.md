@@ -6,6 +6,59 @@ title: Jan Week 5
 Jan 29 - Feb 4<br>
 Week#: 5/52<br>
 
+
+### Hour 22:
+
+Had a quick UX test with my wife. A couple of useful insights:
+
+- Furniture mode is needed. Room gets selected an moved suddenly.
+- First person navigation is a great challenge.
+- Hanging items will also be looked for under ceilings.
+
+
+### Hour 20, 21:
+
+- Designed the floorplan all over again.
+- Identified a few issues:
+    - Components getting rotated automatically.
+    - Balcony walls breaking up exterior bathroom walls improperly.
+    - Scaling rooms don't snap
+    - Walls part of a room cannot scale.
+    - Rooms not getting copied properly.
+    - It's hard to differentiate surface depths without lightmaps.
+
+### Hour 19:
+
+- Started debugging the layout save issue that dropped the entire 2 hour work today morning.
+- I'd forgotten to update the production db after the last Layout model fix.
+- While trying to connect to _ecdb_, realised that this was probably the 10th time I have had to add dev machine ip to ecdb firewall manually.
+- Crafted a bash function in _dev.sh.rc_ to automate this. Tested successfully.
+- Updated the production table successfully.
+
+
+### Hour 18:
+
+- Closed yesterday's thread to backup s3 assets as is into ABS.
+- One of the transfers failed. Had to jump through some hoops to figure out which container failed.
+- The last container seems to have failed due to some bad permissions on the source bucket.
+- Note: Had a call with Rishab regarding GPU renders on Azure cloud.
+
+
+### Hour 17:
+
+ - Realised that our LayoutPlanner is good at drafting a given floorplan, but a pain at planning the original floorplan.
+ - The real bummer though was that the entire work got lost after the layout save failed due to some 500.
+
+### Hour 15, 16:
+
+ - Cleaned up, rebased and pushed the latest code to production.
+ - Started designing a house on production.
+ - Noted a bunch of issues.
+
+
+-----------------
+<br>
+
 ### Hour 14:
 
 Considered the possibility of reordering the s3 bucket copy. But, that didn't seem like a robust solution.
