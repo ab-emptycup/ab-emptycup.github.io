@@ -6,10 +6,14 @@ title: Jan Week 5
 Jan 29 - Feb 4<br>
 Week#: 5/52<br>
 
-### Hour 23:
 
--
 
+### Hour 23-28:
+
+! Bad logging practice detected !
+
+- Removed all dynamic imports from the frontend svelte codebase.
+- Fixed the issue with layout id and project id being _undefined_ on first project page load.
 
 --------
 <br>
@@ -177,7 +181,7 @@ The dev setup has become a huge pain with too many moving parts.
 
 
 -----
-<be>
+<br>
 
 Stretching the week a bit this time:
 
