@@ -5,8 +5,38 @@ title: Jan Week 5
 
 Jan 29 - Feb 4<br>
 Week#: 5/52<br>
+<br>
+
+### Hour 33:
+
+Floorplan optimisation is a dense piece of code. Been studying to identify all the possible cases.
+I have worked out a simple patch in pseudocode to fix the issue and give the extra power of handling variable height walls.
+I haven't started implementing the patch though.
+
+### Hour 31, 32:
+
+- Started working on fixing balcony scaling.
+- Walls now extend the entire depth of the balcony.
+- Walls now scale with the balcony floor.
+- Found an issue with composition when a balcony wall joins a full height interior wall.
+- Digging into the floorplan optimising code to fix the issue.
 
 
+### Hour 30:
+
+- Fixed the issue of individual walls of a room not scaling properly. Just enabled scale controls on selection.
+- Noted an unintended side effect of the scaled wall sometimes losing free movement. Workable for now.
+
+### Hour 29:
+
+- Merged the _nossr_ changes into _master_.
+- Started working on LayoutPlanner fixes in _layoutplanner_ branch.
+- Reorganised the flat svelte component files into UI module folders
+- Tested and fixed all issues successfully.
+
+
+------
+<br>
 
 ### Hour 23-28:
 
