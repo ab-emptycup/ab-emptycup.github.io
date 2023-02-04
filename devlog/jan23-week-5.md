@@ -7,6 +7,32 @@ Jan 29 - Feb 4<br>
 Week#: 5/52<br>
 <br>
 
+
+### Hour 37, 38:
+
+Worked on issues for EmptyCup Portfolio. Had a call.
+
+### Hour 35, 36:
+
+Started trying to implement the patch I worked out yesterday. That turned out to be too complicated.
+I don't have the mental model of how the layoutplanner library works in my head. I figured it might be too
+time taking to figure that out now, given the poor naming conventions and lack of comments. Gave up on that patch.
+
+The alternate would be to scale the walls of balcony appropriately (floor_width - wall thickness). But, that might
+also be complicated due to the way scaling is implemented. _WallCornerConstrainer_ seems to be responsible for this.
+I'll take a shot at hacking that.
+
+I'll soon have to take time out to wrap my head around the LayoutPlannerJS library.
+
+### Hour 34:
+
+Completed & logged a book I just finished: [Rework](/books/rework) by Jason Fried of 37 signals.
+Talks about startups, product development, marketing, culture, productivity with basecamp as a case study.
+
+----
+<br>
+
+
 ### Hour 33:
 
 Floorplan optimisation is a dense piece of code. Been studying to identify all the possible cases.

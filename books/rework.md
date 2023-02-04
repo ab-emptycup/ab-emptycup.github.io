@@ -5,11 +5,11 @@ title: Rework
 
 The book is so concise and to the point that the index itself is a good enough note for the whole book.<br>
 
-FIRST
+__FIRST__
 
 - The new reality
 
-TAKEDOWNS
+__TAKEDOWNS__
 
 - Ignore the real world
 - Learning from mistakes is overrated
@@ -18,7 +18,7 @@ TAKEDOWNS
 - Workaholism
 - Enough with "entrepreneurs"
 
-GO
+__GO__
 
 - Make a dent in the universe
 - Scratch your own itch
@@ -32,7 +32,7 @@ GO
 - Building to flip is building to flop
 - Less mass
 
-PROGRESS
+__PROGRESS__
 
 - Embrace constraints
 - Build half a product, not a half-assed product
@@ -46,7 +46,7 @@ PROGRESS
 - Sell your by-products
 - Launch now
 
-PRODUCTIVITY
+__PRODUCTIVITY__
 
 - Illusions of agreement
 - Reasons to quit
@@ -60,7 +60,7 @@ PRODUCTIVITY
 - Long lists don't get done
 - Make tiny decisions
 
-COMPETITORS
+__COMPETITORS__
 
 - Don't copy
 - Decommoditize your product
@@ -68,7 +68,7 @@ COMPETITORS
 - Underdo your competition
 - Who cares what they're doing?
 
-EVOLUTION
+__EVOLUTION__
 
 - Say no by default
 - Let your customers outgrow you
@@ -76,7 +76,7 @@ EVOLUTION
 - Be at-home good
 - Don't write it down
 
-PROMOTION
+__PROMOTION__
 
 - Welcome obscurity
 - Build an audience
@@ -90,7 +90,7 @@ PROMOTION
 - Marketing is not a department
 - The myth of the overnight sensation
 
-HIRING
+__HIRING__
 
 - Do it yourself first
 - Hire when it hurts
@@ -105,7 +105,7 @@ HIRING
 - The best are everywhere
 - Test-drive employees
 
-DAMAGE CONTROL
+__DAMAGE CONTROL__
 
 - Own your bad news
 - Speed changes everything
@@ -113,7 +113,7 @@ DAMAGE CONTROL
 - Put everyone on the front lines
 - Take a deep breath
 
-CULTURE
+__CULTURE__
 
 - You don't create a culture
 - Decisions are temporary
@@ -123,7 +123,7 @@ CULTURE
 - Don't scar on the first cut
 - Sound like you
 
-**The insights that I especially liked are:**
+### The insights that I especially liked are:
 
 1. Decisions are temporary. Keep making tiny decisions.
 2. Throw less at the problem. Underdo your competition. You need less than you think.
@@ -131,7 +131,8 @@ CULTURE
 4. Hire great writers.
 5. Out teach your competition.
 6. Don't write it down. User feedback can, will & should stay on top of your mind.
-7. When you say no, you say no to one thing. When you say yes, you say no to many things. Say no by default.
+7. Say no by default. No is no to one thing. Yes is no to many things.
 8. Send people home at 5.
 9. Don't scar on the first cut.
 10. Be at-home good.
+11. Sell your by-products.
