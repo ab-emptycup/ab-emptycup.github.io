@@ -7,6 +7,12 @@ Jan 29 - Feb 4<br>
 Week#: 5/52<br>
 <br>
 
+### Hour 39-42:
+
+Wrote and sent the investor update after almost 9 months.
+
+----
+<br>
 
 ### Hour 37, 38:
 
