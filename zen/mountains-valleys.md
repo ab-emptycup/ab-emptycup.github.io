@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mountains & Valleys
+title: Mountains & valleys
 ---
 
 Sit down and write!
