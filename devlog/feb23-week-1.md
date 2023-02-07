@@ -21,7 +21,7 @@ Fixed a couple of obvious deal breakers:
 
 
 ----
-
+<br>
 
 Started the week by taking a day off. I started to feel like I was inching towards burn out with little motivation or drive.
 The day off breaks a 4 week steak. It did give me a chance to reflect about work. Here's some things I have realised over the past 2 days:
