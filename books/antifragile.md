@@ -21,7 +21,7 @@ title: Antifragile
 
 - Engineered is fragile. Organic is antifragile.
 - Antifragility can come from layers.
-- Competition among units in one layer leads to antifragile of the higher layer.
+- Competition among units in one layer leads to antifragility of the higher layer.
 - Proteins < Cells < Organisms < Species < Ecosystem < Nature
 - Aggregate's interests are opposed to individual interests.
 - What doesn't kill me kills others, making the aggregate stronger.

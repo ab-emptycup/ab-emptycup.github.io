@@ -6,9 +6,23 @@ title: February Week 1
 Feb 5 - Feb 12<br>
 Week #: 6/52<br>
 
+### Feb 7 - Tuesday:
+
+Review: _Great_
+
+- Had two live UX review calls. Identified a load of issues to fix.
+- Fixed a couple of bugs.
+- Changed preview render resolution from _240p_ to _144p_.
+- Restarted supervisord processes on _catalogue3d_.
+
+
 ### Feb 6 - Monday:
 
+Review: _Good_
+
 Started planning for the weeks work and the valley mindset.
+
+Setup ux review calls.
 
 Fixed a couple of obvious deal breakers:
 
@@ -18,6 +32,7 @@ Fixed a couple of obvious deal breakers:
 - Added loading screen for the /projects.
 - Disabled floorplan upload
 - Broken auth on Firefox.
+
 
 
 ----
