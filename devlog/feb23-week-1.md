@@ -6,6 +6,20 @@ title: February Week 1
 Feb 5 - Feb 12<br>
 Week #: 6/52<br>
 
+### Feb 8 - Wednesday:
+
+Review: _Good_
+
+Fixed some glaring issues today:
+
+- Fixed issue with loading delay for 3D
+- Fixed issue with 2D not loading on switch
+- Improved loading by making _layout-options_ and _floorplan-options_ async.
+- Disabled quotes and made loading screen translucent to show progress.
+- Fixed yesterday's spinner issue
+- Added optional text to floorplan upload input
+
+
 ### Feb 7 - Tuesday:
 
 Review: _Great_
