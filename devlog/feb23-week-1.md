@@ -19,6 +19,8 @@ Fixed some glaring issues today:
 - Fixed yesterday's spinner issue
 - Added optional text to floorplan upload input
 
+Just starting to see a slightly different path to product than originally intended.
+No new features. Detailed polishes.
 
 ### Feb 7 - Tuesday:
 
@@ -48,9 +50,10 @@ Fixed a couple of obvious deal breakers:
 - Broken auth on Firefox.
 
 
-
 ----
 <br>
+
+
 
 Started the week by taking a day off. I started to feel like I was inching towards burn out with little motivation or drive.
 The day off breaks a 4 week steak. It did give me a chance to reflect about work. Here's some things I have realised over the past 2 days:
