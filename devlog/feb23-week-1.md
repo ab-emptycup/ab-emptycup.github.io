@@ -6,7 +6,16 @@ title: February Week 1
 Feb 5 - Feb 12<br>
 Week #: 6/52<br>
 
-### Feb 8 - Wednesday:
+#### Feb 9 - Thursday:
+
+Review: _Okay_
+
+- Fixed the broken render flow on dev environment.
+- Added light presets to materials and fixed rendering. Untested.
+- Had a long UX review and marketing discussion.
+
+
+#### Feb 8 - Wednesday:
 
 Review: _Good_
 
@@ -22,7 +31,7 @@ Fixed some glaring issues today:
 Just starting to see a slightly different path to product than originally intended.
 No new features. Detailed polishes.
 
-### Feb 7 - Tuesday:
+#### Feb 7 - Tuesday:
 
 Review: _Great_
 
@@ -32,7 +41,7 @@ Review: _Great_
 - Restarted supervisord processes on _catalogue3d_.
 
 
-### Feb 6 - Monday:
+#### Feb 6 - Monday:
 
 Review: _Good_
 
