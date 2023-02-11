@@ -6,6 +6,13 @@ title: February Week 1
 Feb 5 - Feb 12<br>
 Week #: 6/52<br>
 
+#### Feb 10 - Friday:
+
+Review: _Off_
+
+- Code review for Portfolio v0.1
+
+
 #### Feb 9 - Thursday:
 
 Review: _Okay_
