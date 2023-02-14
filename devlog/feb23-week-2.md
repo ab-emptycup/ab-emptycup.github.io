@@ -8,9 +8,21 @@ Week #: 7/52<br>
 
 
 
+#### Feb 13 - Monday
+
+Review: _Okay_
+
+- Had first call to review RoC filings. Setup a follow up for Sunday.
+- Finished first code review of PR on Portfolio API.
+- Started debugging issue with rendering lights.
+
+----
+<br>
+
+
 Last week mostly went into UX trials and feedback. I'll focus on fixing the issues this week.
 There are a few core issues to be resolved first. I'll aim to get standard workflow sorted by the end of the week.
-I'll also try to create a simple video demo to introduct the UX.
+I'll also try to create a simple video demo to introduce the UX.
 
 The deal breaker issues to fix are:
 
