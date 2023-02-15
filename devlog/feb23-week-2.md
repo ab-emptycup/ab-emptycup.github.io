@@ -8,6 +8,14 @@ Week #: 7/52<br>
 
 
 
+#### Feb 14 - Tuesday
+
+Review: _Great_
+
+- Fixed issue with rendering lights.
+- Fixed a bunch of other hidden frontend issues.
+
+
 #### Feb 13 - Monday
 
 Review: _Okay_
