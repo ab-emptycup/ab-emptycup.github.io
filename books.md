@@ -16,3 +16,6 @@ title: Books
 11. 33 strategies of war
 12. The art of war
 13. Tao Te Ching
+14. Shape up
+15. Steve Jobs
+16. The Macintosh Way
