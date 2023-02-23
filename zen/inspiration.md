@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Inspiration & Creativity
+title: Inspiration
 ---
 
+Reflection on inspiration & creativity.
 
-- Inspiration is input. Creativity is the output.
+
+- Inspiration kindles the quest for creativity.
 - Inspiration is the trigger. Creativity is the fusion reaction.
 - How to set off a creative fusion reaction...
 
