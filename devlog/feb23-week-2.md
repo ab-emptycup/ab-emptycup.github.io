@@ -7,8 +7,8 @@ Feb 12 - Feb 18<br>
 Week #: 7/52<br>
 
 
-
-#### Feb 14 - Tuesday
+<br>
+### Feb 14 - Tuesday
 
 Review: _Great_
 
@@ -16,7 +16,8 @@ Review: _Great_
 - Fixed a bunch of other hidden frontend issues.
 
 
-#### Feb 13 - Monday
+<br>
+### Feb 13 - Monday
 
 Review: _Okay_
 
