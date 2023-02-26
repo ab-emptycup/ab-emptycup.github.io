@@ -6,6 +6,23 @@ title: February Week 3
 Feb 19 - Feb 25<br>
 Week #: 8/52<br>
 
+### Fri, Feb 24
+
+Implemented `ec tools recat transform` to apply the manually edited _mapping.tsv_ to generated a new
+set of filtered materials that can be imported into the SQL db.
+
+Made a few more passes to separate out the brand from category metadata. Added **brand** field to the Material table.
+Still operating just with _.tsv_ files. Fixed a few case conventions.
+
+_Have to reduce getting distracted into seemingly useful but actually useless distractions._
+
+Applied the same process to furnishings. _analyse_ -> _filter_ -> _map_ -> fix map manually. Laborious process
+with over 850 categories of furnishings.
+
+
+-------
+<br>
+
 
 ### Thu, Feb 23
 
