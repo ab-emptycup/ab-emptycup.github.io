@@ -6,6 +6,36 @@ title: February Week 4
 Feb 26 - Mar 4<br>
 Week #: 9/52<br>
 
+### Wednesday: Mar 1
+
+Retrospective logging again:
+
+- Changed some of the DB columns to JSON type before importing furnishings.
+- Surprisingly the original TEXT columns converted to JSON type pretty smoothly.
+- Fixed a bunch of initialization issues with the codebase.
+
+
+- Dropped the _tag_ tables.
+- Dropped the *project_access* table.
+
+
+- Removed a lot `looks` code. Dropped the notion of multi-theme projects.
+- Removed `active_theme`. Tested successfully with some quirks.
+- First, there still are some materials hardcoded in code that refer to _studio3d_ assets.
+- Second, _slots.json_ used by `house.create()` still references _v1_ material ids.
+
+
+- Streamlined the furnishing recataloguing flow.
+- Standardized the file naming convention for the recatalogue pipeline.
+- Cleared up the _emptycup3d_ blob containers.
+- Setup script to import the ~15000 furnishings after recat preprocessing.
+- Running copy. ETA 6 hours.
+
+
+
+----
+<br>
+
 
 ### Tuesday: Feb 28
 
