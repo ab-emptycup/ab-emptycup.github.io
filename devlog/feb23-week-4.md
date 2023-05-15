@@ -6,6 +6,41 @@ title: February Week 4
 Feb 26 - Mar 4<br>
 Week #: 9/52<br>
 
+
+### Thursday: Mar 2
+
+Finally back to prospective logging today:
+
+
+I have the components in the db now and the assets setup in the blob store.
+I don't like the preview images. That's what I want to work on today.
+There are a few considerations:
+
+- How to filter components whose preview needs to be force updated? False positives imply loss of signal.
+    - For now I'm thinking, incremental multi pass manual selection based on existing preview.
+- Once the target acquisition is resolved, what's the heuristic for better material defaults?
+- Explore impact of direct application from past project data.
+- Reintroduce palettes into the system to select aesthetic defaults.
+- Setup a clean local regenerate pipeline.
+- Improving the scene settings to improve the quality of the previews.
+
+
+First a quick fix to a misstep, I generated a map of the furnishing ids from the v1 to v2 after yesterday's import.
+
+
+Next I started working on checking the furnishing usage in past projects. Analysis shows __9790__ of __14462__ furnishings have been used before. My next step is to match the slots. Figured out the way to match the slots.
+It's definitely not straight forward.
+
+Implemented `ec tools recat recollect` to recollect the material choices from old projects.
+
+Implemented `ec tools recat regenerate` to regenerate previews based on a given theme from _v1_.
+
+Spent 3 hours getting the flow to work. A major time sink was moving to Blender 3.3.4
+
+----
+<br>
+
+
 ### Wednesday: Mar 1
 
 Retrospective logging again:
