@@ -2,8 +2,7 @@
 layout: home
 ---
 
-May, 2023 - [Week 3](/devlog/may23-week-3.md)
-
+May, 2023 - [100 hours to launch](/devlog/100-to-launch.md)<br>
 
 February, 2023 - [Week 4](/devlog/feb23-week-4)<br>
 February, 2023 - [Week 3](/devlog/feb23-week-3)<br>
