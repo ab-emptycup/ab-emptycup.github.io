@@ -6,8 +6,6 @@ title: 100 hours to launch
 This is a 100 hour countdown to launch of [emptycup3d.com]().
 
 
----
-<br>
 
 ### Hour 1:
 
@@ -66,6 +64,25 @@ Still working through _parseMaterial()_
 ---
 <br>
 
-### Hour 9:
+### Hour 9, 10:
 
+Refactored texture and lightmap loading flow. Dropped call backs in favour of async.
+I still need to untangle the whole caching mechanism for images.
+
+
+---
+<br>
+
+### Hour 11:
+
+Had call with Amrita faculty regarding the transparency of the application process.
+Discussed the internship situation at KLU as well with Bharat.
+
+
+---
+<br>
+
+### Hour 12:
+
+It is still just wading through the refactor. I have to get out of this swamp by the end of the day.
 
