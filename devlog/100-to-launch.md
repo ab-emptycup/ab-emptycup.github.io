@@ -85,4 +85,41 @@ Discussed the internship situation at KLU as well with Bharat.
 ### Hour 12:
 
 It is still just wading through the refactor. I have to get out of this swamp by the end of the day.
+Identified and resolved a bunch of issues debugging the page load.
+
+
+---
+<br>
+
+### Hour 13:
+
+Had a long meeting with the RBL bank executive for current account opening. This is a blocker
+for the product launch as the payment gateway integration needs these formalities to complete.
+
+
+---
+<br>
+
+### Hour 14:
+
+Had a productive call with the Amrita faculty regarding the issue with internships.
+Expecting 11month interns to be available by mid August.
+
+
+---
+<br>
+
+### Hour 15, 16, 17, 18:
+
+Fixed all the issues in debugging and finally got to a place where the model was loading smoothly
+though the textures are still not loading. Apart from that the original meaningless error that
+triggered the whole refactor seems to popped up again.
+
+On digging further, I realised that this meaningless error was being thrown by a piece of
+dumb caching code that was failing because of the furnishing model json served by ABS being empty.
+So, it turns out this had nothing to do with _scenejs_ at all.
+
+Time to turn in for the day hoping for sweet dreams of stabbing some unknow authors of caching code
+repeatedly in the neck with a long rusted ice-pick.
+
 
