@@ -3,6 +3,13 @@ layout: page
 title: 100 hours to launch
 ---
 
+
+This sprint was abandoned midway due to a sharp change in execution strategy.
+
+
+-----
+
+
 This is a 100 hour countdown to launch of [emptycup3d.com]().
 
 
