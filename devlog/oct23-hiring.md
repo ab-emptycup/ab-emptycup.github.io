@@ -50,5 +50,27 @@ But, I think I will keep gathering data and interacting with students till a pat
 becomes clear and obvious.
 
 
+### Day 2:
 
+After discussing with a couple of friends with experience, this is what I'm going for:
+
+Adopt a kind of guerilla hiring campaign where students will be evaluated based on their
+work on a take home assignment. The things that I need to do for executing on this strategy:
+
+1. Create an online take home assignment page
+2. Create an online registration form
+3. Create an online presence for the company's work.
+4. Visit colleges and interact with students as a branding campaign.
+
+There are still a couple of unanswered questions about our strategy:
+
+1. Will part-time internships be allowed?
+2. Will remote internships be allowed?
+
+My current bias is full time remote internships is the optimal option.
+
+
+### Day 3:
+
+First step is to setup the online assignment. That's what I'll be working on today.
 

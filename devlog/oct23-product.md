@@ -3,6 +3,16 @@ layout: page
 title: Product - October'23
 ---
 
+
+This thread has once again been halted on Day-3. This happened primarily due to my
+reassessment of the effort needed to run the hiring drive. I will continue work on this
+thread only so far as it pertains to hiring. For eg: setting up portfolio assignment etc.
+
+More details on way ahead from here are available on this month's [planning log](/devlog/oct23-planning).
+
+----
+
+
 This log is commencing only in the last week of October 2023.
 There is probably 5 days of work left. I'll be taking up this thread at a leisurely
 pace as this is not my highest priority this quarter.
@@ -37,5 +47,6 @@ Ran into an issue with the api server where the supervisor service was failing t
 This is very likely due to some path not existing or not having the right permissions. I tried 
 seeing if I could quickly resolve this, but I couldn't. So, I'll take a shot at it again tomorrow.
 I got the webapp to deploy properly and could load the landing page on the browser.
+
 
 
