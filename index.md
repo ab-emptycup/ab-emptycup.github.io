@@ -2,6 +2,9 @@
 layout: home
 ---
 
+November, 2023 - [EmptyCup Academy](/devlog/nov23-academy)<br>
+
+
 October, 2023 - [Hiring](/devlog/oct23-hiring)<br>
 October, 2023 - [Product](/devlog/oct23-product)<br>
 
