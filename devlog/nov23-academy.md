@@ -44,3 +44,6 @@ Wrote and published "Guerilla Hiring" article.
 
 - Fleshed out the narrative for a post titled "Optimse for learning"
 - Started working on the assighment page.
+
+
+### Day 4:

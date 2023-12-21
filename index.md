@@ -2,6 +2,10 @@
 layout: home
 ---
 
+
+December, 2023 - [Dev Reboot](/devlog/dec23-reboot)<br>
+
+
 November, 2023 - [EmptyCup Academy](/devlog/nov23-academy)<br>
 
 
