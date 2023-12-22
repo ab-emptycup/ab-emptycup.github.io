@@ -3,7 +3,30 @@ layout: page
 title: December'23 -  Reboot
 ---
 
-The goal of this devlog is to keep myself company as I reboot into development mode. Last few months have been a lot of travelling, hiring, presentations, code reviews and campaigning. Parallelly, I will also be helping the new team get setup. 
+### December 22
+
+So the furnishing was being added in 2D, but not showing up in 3D. The first thing was checking if all the materials assets were available. Luckily they were. Then on checking the network requests I noticed that the 3D model itself was not being fetched.
+
+- On digging further, I noted that the furnishing was being added to the floorplan, but doesn't show up in the database. I need not have confirmed from the database, but did. So, the frontend seems to be saving a valid floorplan, but the backend is not able to pickup the furnishings in the layout.
+- I checked to see if there were any errors logged in the backend. But, none. _As a side note: When I tried to check the backend logs, I noticed a lot drama happening with the worker processes being terminated and recreated a lot. I'll need to resolve that once this is done._
+- I tried with a different furnishing. But same story. Successful save. Furnishing saved in floorplan but not shown in 3D. It doesn't show up in the database either.
+- Debug log shows the furnishing is "added" in the backend. It doesn't show up in the project in the DB. At this point, I'm actually not sure if it is supposed. But what I can do is check how the scene is being composed on load. The furnishing definitely has to be there.
+- Yes, the furnishings are loaded from the Project and the project doesn't seem to be aware of the furnishing even though it is present in the floorplan.
+- Figured out what the issue is. The changes are being made to the project but the ORM is not noting the changes. This is very likely a mysql setting. I do remember having to add a config setting to enable the ORM to track changes. This may have been due to a change either with the mysql image or the update to the ORM dependency. The latter is unlikely because of version freeze in pip. I have verified that the issue gets fixed if the ORM is explicitly notified of the field update. I still need to figure out how to apply this change in the cleanest way possible.
+
+
+Ok, that's a patch. SQLAlchemy documentation clearly states that the JSON field type cannot track mutations. The recommended workaround is to use the mutable extension that tracks the changes. So, I patched the tables using the builtin JSON type to use the new mutable JSON types. The catch here is that even the extension only supports tracking changes at the first level. Any changes in nested objects of a JSON will not be tracked. This becomes a problem in our case when definitions change. But, it seems when those changes happen we are reassigning the value explicity (I think). So, the main candidates for change are simple lists that track resource IDs.
+
+I'm a bit uncertain about this patch. It solves the problem for now. But a part of the issue may still be present for JSON based dictionaries being stored in the DB. The really strange part here is that this was working fine a while back before my system reset. It should not have been working. If we encounter this kind of issue again, I'll do a thorough pass. For now, I'm committing and moving on.
+
+
+
+
+
+
+
+
+
 
 ### December 21
 
@@ -44,3 +67,9 @@ The next step is furnishings. I got the furnishings dump as a .tsv. I was able t
 With both the catalogue tables in the db freshly imported, I'm able to reproduce the error of missing furnishings in 3D. I added a console log to identify the id of the furnishing that was supposed to show up. Noted down the ID. Checked the slots and noted all the textures that are needed for the model. All of them seem to be available on the CDN. So, that wasn't the issue. Last time I was working on this, I had run a storage account COPY operation on azure that took a few hours to complete and even then a lot of the assets were still in the copy queue. I wanted to make sure this issue was not because of that.
 
 I double checked in a simpler project, just to be sure that all the slot materials actually refer to assets that can be fetched using the ref. On checking the network requests, it seems the 3D model of the furnishing was never fetched in the first place. 
+
+
+### Intro
+
+
+The goal of this devlog is to keep myself company as I reboot into development mode. Last few months have been a lot of travelling, hiring, presentations, code reviews and campaigning. Parallelly, I will also be helping the new team get setup. 
