@@ -13,7 +13,7 @@ The bricks needed for creating a woodwork are missing. On digging further it tur
 
 I tested that the woodwork design interface is working alright. Partitioning, sectioning, internals etc. Ofcourse, this needs to be properly implemented in tests later. But for now, I think the deployment is in some shape. 
 
-The next step is to test renders. I did try a couple of preview renders. To monitor, I installed the eccli with `pip install --editable .` The queueing process seems to be working smoothly. I tried running a render worker with the saved alias. 
+The next step is to test renders. I did try a couple of preview renders. To monitor, I installed the eccli with `pip install --editable .` The queueing process seems to be working smoothly. I tried running a render worker with the saved alias. That failed because one of the dependencies is not installed. Should be a straighforward fix if a bit tedious.
 
 
 
