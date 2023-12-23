@@ -3,6 +3,20 @@ layout: page
 title: December'23 -  Reboot
 ---
 
+### December 23
+
+Now going further into the workflow, trying to test woodwork design. Woodwork addition and recognition in 3D page are working properly. Modular design page errors out on loading the woodwork. There's an error showing in the console.
+
+This is a chain of issues. The root of the issue seems to be the incomplete patch from yesterday. Woodworks are not loading because the woodwork definition is `null`. Then I checked if the woodwork definition is being sent properly to the backend. It is. Is the definition getting updated in the database. No. I take the bet of converting the definition and supporting attributes of a woodwork also to mutable JSONDicts. Still unable to decide whether that resolution worked or had side effects due to a new error in finding the approapriate bricks for the woodwork composition. 
+
+The bricks needed for creating a woodwork are missing. On digging further it turns out that the bricks are managed via a local cache. These bricks are fetched from the CDN, but stored in the local disk for performance reasons. But, the azure container did not seem to have a copy of these bricks. This did not cause an issue earlier because they were already in the cache. Since, I'm setting the dev environment freshly now, the cache is empty and hence it caused a problem. Fixed it by uploading the bricks from a local backup copy. With that issue resolved, woodworks are loading properly in 3D.
+
+I tested that the woodwork design interface is working alright. Partitioning, sectioning, internals etc. Ofcourse, this needs to be properly implemented in tests later. But for now, I think the deployment is in some shape. 
+
+The next step is to test renders. I did try a couple of preview renders. To monitor, I installed the eccli with `pip install --editable .` The queueing process seems to be working smoothly. I tried running a render worker with the saved alias. 
+
+
+
 ### December 22
 
 So the furnishing was being added in 2D, but not showing up in 3D. The first thing was checking if all the materials assets were available. Luckily they were. Then on checking the network requests I noticed that the 3D model itself was not being fetched.
@@ -12,20 +26,12 @@ So the furnishing was being added in 2D, but not showing up in 3D. The first thi
 - I tried with a different furnishing. But same story. Successful save. Furnishing saved in floorplan but not shown in 3D. It doesn't show up in the database either.
 - Debug log shows the furnishing is "added" in the backend. It doesn't show up in the project in the DB. At this point, I'm actually not sure if it is supposed. But what I can do is check how the scene is being composed on load. The furnishing definitely has to be there.
 - Yes, the furnishings are loaded from the Project and the project doesn't seem to be aware of the furnishing even though it is present in the floorplan.
-- Figured out what the issue is. The changes are being made to the project but the ORM is not noting the changes. This is very likely a mysql setting. I do remember having to add a config setting to enable the ORM to track changes. This may have been due to a change either with the mysql image or the update to the ORM dependency. The latter is unlikely because of version freeze in pip. I have verified that the issue gets fixed if the ORM is explicitly notified of the field update. I still need to figure out how to apply this change in the cleanest way possible.
+- Figured out what the issue is. The changes are being made to the project but the ORM is not noting the changes. This is very likely a mysql setting. I do remember having to add a config setting to enable the ORM to track changes. This may have been due to a change either with the mysql image or the update to the ORjjjjjjjjjjjjjM dependency. The latter is unlikely because of version freeze in pip. I have verified that the issue gets fixed if the ORM is explicitly notified of the field update. I still need to figure out how to apply this change in the cleanest way possible.
 
 
 Ok, that's a patch. SQLAlchemy documentation clearly states that the JSON field type cannot track mutations. The recommended workaround is to use the mutable extension that tracks the changes. So, I patched the tables using the builtin JSON type to use the new mutable JSON types. The catch here is that even the extension only supports tracking changes at the first level. Any changes in nested objects of a JSON will not be tracked. This becomes a problem in our case when definitions change. But, it seems when those changes happen we are reassigning the value explicity (I think). So, the main candidates for change are simple lists that track resource IDs.
 
 I'm a bit uncertain about this patch. It solves the problem for now. But a part of the issue may still be present for JSON based dictionaries being stored in the DB. The really strange part here is that this was working fine a while back before my system reset. It should not have been working. If we encounter this kind of issue again, I'll do a thorough pass. For now, I'm committing and moving on.
-
-
-
-
-
-
-
-
 
 
 ### December 21
