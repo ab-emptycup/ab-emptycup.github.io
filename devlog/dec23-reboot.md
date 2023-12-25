@@ -3,6 +3,31 @@ layout: page
 title: December'23 -  Reboot
 ---
 
+### December 25
+
+Cleaned up the code, committed, rebased on master, merged into master, removed the working branch and pushed. 
+
+I want to clean up the furnishing models. The furnishing model have stale slot data encoded in the 3D model file.
+To do this, I want to create a workhorse VM on azure and run the operation there. That will be way more efficient 
+than running the operation my system. 
+
+It took a while to identify the VM with the best pricing configuration. 
+Picked an 8Core 16GB machine with an 512GB Standard HDD attached.
+Assigned a dns name and added a local alias for me to SSH into the machine.
+
+Setup the devops account on the workhorse. Created a different branch for scripting work.
+
+Setup a separate module on eccli to interactively implement scripting.
+
+Invested some time in getting catalogue scripts to use multiprocessing effectively.
+This is very much experimental. If I can implement a clean convention, this would
+simplify the catalogue processing code significantly. So, worth the effort.
+
+Implemented the atomic update operation. Tested & working.
+Implemented the parallelization. But the reporting is not very coherent due to concurrency.
+Implemented the preprocessing needed to update all furnishings.
+Tested. There seem to be a couple of unaccounted corner cases.
+
 ### December 23
 
 Now going further into the workflow, trying to test woodwork design. Woodwork addition and recognition in 3D page are working properly. Modular design page errors out on loading the woodwork. There's an error showing in the console.
