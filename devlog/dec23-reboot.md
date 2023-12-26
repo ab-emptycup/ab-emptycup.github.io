@@ -3,6 +3,21 @@ layout: page
 title: December'23 -  Reboot
 ---
 
+### December 26
+
+Fixed a couple of issues:
+- Missing preview images for modular design.
+- Missing blobs in the fitting storage.
+
+Modified yesterday's script to not break when a particular model errors out. Spent some time
+debugging an deserialization issue with some of the assets on Azure: `This pipeline didn't have the RawDeserializer policy; can't deserialize`. Wasted a lot of time on debugging without much progress due to continuous interruptions. After a while, decided to put this on hold as this is not a big priority. This is not a blocker issue. Just improves cleanliness of the system and can even be addressed later. Priority right now is getting the product organised for product reviews and ofcourse, mentoring.
+
+Spent some time writing up a couple of issues on tracker. Canvas session recording may have finally been solved. Spent some time exploring the two alternatives available in the market Smartlook and Highlight. Hightlight seems more interesting. Either way, it should definitely help get off to a start with canvas enabled session recordings for streamlining user onboarding.
+
+Rest of the day spent on a couple of calls. The first was a mentoring call. During the call I figured that it would be very helpful for the team if create overview diagrams explaining the system at a highlevel giving a birds eye view of the dependencies, the control flow and abstraction heirarchies. 
+
+The second was long call to discuss marketing strategy.
+
 ### December 25
 
 Cleaned up the code, committed, rebased on master, merged into master, removed the working branch and pushed. 
