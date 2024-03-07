@@ -3,6 +3,26 @@ layout: page
 title: December'23 -  Reboot
 ---
 
+
+### December 28
+
+I'm trying to deploy to production. Once the issues with deploy are resolved, we'll have a clear
+path ahead to plan the releases.
+
+As a first thing, I realised that the production branch was ahead of master. That means I made some
+changes on production and did not rebase master. That caused some rework and some conflicts. This is 
+a bad practice that I should avoid from now on, especially with the team branching off of master.
+- I'm now working on merging the branches properly first.
+- Once that is done, I'll try to push to production and see what happens.
+
+That merge was a bit complex because I wanted some changes from the master branch and some from the production branch.
+First rebased production onto master. Then merged production into master. No need to set production to master. But, the last step is pending as I wanted to keep the branches as it is till I can confirm a working state. Once I'm confident then I'll
+delete or overwrite the branches and push to remote.
+
+The local deploy seems to have a problem with 3D page rendering. Unfortunately, there are no obvious errors. The 
+
+
+
 ### December 26
 
 Fixed a couple of issues:
@@ -16,7 +36,7 @@ Spent some time writing up a couple of issues on tracker. Canvas session recordi
 
 Rest of the day spent on a couple of calls. The first was a mentoring call. During the call I figured that it would be very helpful for the team if create overview diagrams explaining the system at a highlevel giving a birds eye view of the dependencies, the control flow and abstraction heirarchies. 
 
-The second was long call to discuss marketing strategy.
+The second was a long call to discuss marketing strategy.
 
 ### December 25
 
