@@ -1,5 +1,6 @@
 ---
-layout: home
+layout: page
+title: Product
 ---
 
 **April, 2024**
