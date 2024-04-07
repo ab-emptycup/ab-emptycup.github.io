@@ -11,5 +11,5 @@ header_pages:
   - index.md
   - books.md
   - zen.md
-  - devlog/index.md
-  - product/index.md
+  - devlog.md
+  - product.md
