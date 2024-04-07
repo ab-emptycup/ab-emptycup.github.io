@@ -9,7 +9,7 @@ email: ab@emptycup.in
 
 header_pages:
   - index.md
+  - product.md
+  - devlog.md
   - books.md
   - zen.md
-  - devlog.md
-  - product.md
