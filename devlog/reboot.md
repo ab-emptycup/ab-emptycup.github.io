@@ -7,7 +7,10 @@ title: Reboot
 This is my attempt to reboot into a creative routine after a burn out. Not ready for a full post mortem of what caused the burnout yet. Realised I need to step up my game to meet the creative demands. One of the main causes for the burn out was not giving myself time to reflect & plan. This is an attempt to fix that. This model worked well for me with development. I'm a little lost actually. I'm not sure what I'm trying to do with this. So, I decided I'll just keep writing about it and see if that brings some clarity and hopefully some structure.
 
 
----
+---<br>
+
+
+### Day 1:
 
 First, I put down our main objectives and the tasks/activities that they involve.
 That seemed to have freed up some headspace for sure. But it still feels incomplete.
@@ -41,8 +44,68 @@ So, I started prioritizing some of the tasks and setting deadlines.
 At this point, I feel the biggest differentiator is streamlining lead generation.
 For this, the key problem to solve is getting a good marketing agency onboard.
 
+_No that isn't it. It feels like I need to elevate a little more for prioritisation._
 
----
+Ok, cleared up the PMF doc and reset.
+
+
+------<br>
+
+
+### Day 2:
+
+Started working on the PMF document to regroup.
+- Articulated the positioning: Customer segment, USP, Pain points
+- Tweaked the offer
+
+Sync up with Thinkbyte folks. Some insights on digital marketing:
+- Not worth it to hire an agency
+- Digital marketing and cold calling with separate out automatically
+- Lead cost increases in meta if the ads are not periodically updated
+- There shouldn't be any discrepency between Meta leads report and download.
+- Connection rate for calls should be around 60%. 70-80% is industry best.
+- Have multiple ads in the ad set for facebook to circulate.
+- Retargetting in meta is essential
+- Omnichannel retargetting is also crucial.
+- Futwork & others for lead qualification as a service
+- Claypot for enriching leads and automating marketing.
+- Meta offers webhook API to pull in campaign data automatically into sheets.
+
+
+Continuted working on the offer.
+Enumerated problems & solutions with value equation in mind.
+Pricing is still an issue. Not able to find a convincing pricing model.
+
+
+
+------<br>
+
+### Day 3:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
