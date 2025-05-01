@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Mountains & valleys
+date: 2023-02-06
 ---
 
 I have been working for the last 6 months on a major UX rewrite. During this time, my focus had been productivity.
