@@ -7,7 +7,8 @@ title: Reboot
 This is my attempt to reboot into a creative routine after a burn out. Not ready for a full post mortem of what caused the burnout yet. Realised I need to step up my game to meet the creative demands. One of the main causes for the burn out was not giving myself time to reflect & plan. This is an attempt to fix that. This model worked well for me with development. I'm a little lost actually. I'm not sure what I'm trying to do with this. So, I decided I'll just keep writing about it and see if that brings some clarity and hopefully some structure.
 
 
----<br>
+---
+<br>
 
 
 ### Day 1:
@@ -49,7 +50,8 @@ _No that isn't it. It feels like I need to elevate a little more for prioritisat
 Ok, cleared up the PMF doc and reset.
 
 
-------<br>
+----
+<br>
 
 
 ### Day 2:
@@ -78,11 +80,36 @@ Pricing is still an issue. Not able to find a convincing pricing model.
 
 
 
-------<br>
+----
+<br>
 
 ### Day 3:
 
 
+Needed a higher level reprioritisation to retain clarity.
+Cleaned up and reset CEO.xmind. That will contain the big picture.
+Enumerated most of the important threads.
+Need to figure out a small daily ritual around revisiting that big picture.
+
+
+Started working on the ads. Figured out the framework for ad content.
+Enumerated the campaigns, callouts, value propositions.
+Started working on the scripts for the value proposition.
+
+Not able leverage AI fully for this. It feels like the words coming out of AI are not authentic.
+They feel more like marketing language. Need to figure out the right balance of effort and tone.
+I can get the tone right, but it will be a lot of work.
+I can use AI, but the tone will feel a little artificial.
+
+For now just using AI, to give me some raw sentences and then editing those sentences to sound a little more authentic.
+
+
+Had call with Sathwik. Free design. 10-12 designs per month. 1 designer in house, they might move out.
+Want to get the wives into design. Should definitely be a potential customer. Should keep in mind to follow this up tightly.
+Ideally should be handled by someone else. May be get a full timer for customer support / training / follow up?
+
+
+Handed over Starthub enquiry to Viswanadh. Resolved successfully. Need to start preparing for fundraising.
 
 
 
