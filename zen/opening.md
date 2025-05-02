@@ -19,14 +19,12 @@ For now, the expectation is that it should:
 So far:
 
 - Review CEO.xmind.
-- Review Todo for scheduled tasks.
+- Revisit Todo to update chores & tasks.
 - Review calendar for any commitments / meetings.
 - Setup quick notes for the day to not miss any insights / connections.
 - Publish the previous day's log and start today's.
 
 This looks like mundane stuff, but I should make this ritual automatics. Let's start with 21.
-
-
 
 
 

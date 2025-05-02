@@ -120,16 +120,50 @@ Handed over Starthub enquiry to Viswanadh. Resolved successfully. Need to start 
 ### Day 4:
 
 
+Setup an [opening ritual](/zen/opening).
+
+1. Develop the ads further & handoff
+       - Needs more effort from my side
+       - Devanshu is blocked on this
+       - Ads are blocked on this
+       - Will take a week atleast for preparation
+2. Develop engineering backlog
+       - Priority items will get delayed by a week
+       - Needs effort from my side to review beta
+3. Prepare for marketing funnel consultation
+       - One time consultation opportunity. Need to prepare to capitalize.
+3. Finalise the Quote generator design & handoff
 
 
+Marketing funnel consultation is my priority today.
+Consultation call is schedule at 4pm.
+Undecided if I should start my day with the prep or block an hour before the consultation call.
+Prioritisation vs efficiency. I'll go with prioritisation. This should be the highlight of my day.
 
 
+_Consultation call was completely useless. Apparently there's some other guy who might be a better fit._
 
 
+Worked on the script for one ad and handed over to Devanshu.
+Gave access to Canva account and gave one reference for the ad video.
+
+Reviewed Dilpreet's renders for the sample Tridasa model.
+Feedback still needs to be shared.
 
 
+----
+<br>
+
+### Day 5:
 
 
+Started with opening ritual:
+
+- Reprioritised fundraising preparation.
+- Planned the calendar for today.
+- Updated the todo list for chores
+- Setup the notes
+- Updated and setup the daily log.
 
 
 

@@ -9,5 +9,11 @@ Reflections on creativity.
 [Burnout](/zen/burnout)<br>
 [Inspiration](/zen/inspiration)<br>
 
+---
+<br>
 
 [Mountains and valleys](/zen/mountains-valleys)<br>
+[Elevation](/zen/elevation)<br>
+[Vantage](/zen/vantage)<br>
+[Sprints](/zen/sprints)<br>
+
