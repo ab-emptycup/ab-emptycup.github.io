@@ -166,6 +166,14 @@ Started with opening ritual:
 - Updated and setup the daily log.
 
 
+Entire day's focus is clarifying the engineering backlog:
+- Jayant: 75 hour backlog [Ready]
+- Manan: 50 hour backlog [Ready]
+- Raj: 55 hour backlog [Ready]
+
+
+Intense back to back calls. Long day.
+The only matter of concern is that I missed the solo testing.
 
 
 
