@@ -176,5 +176,31 @@ Intense back to back calls. Long day.
 The only matter of concern is that I missed the solo testing.
 
 
+---
+<br>
+
+
+### Day 6:
+
+Started with the opening ritual.
+Prioritised fundraising preparation.
+Started with some inspiration from Presenting to Win.
+Tussled with the flow structure.  Feels like still incomplete.
+Explored the budget plan with the seed raise.
+
+Switched to working on the ad copy to get things into motion.
+Had a call with Viswanadh to review the positioning implications.
+
+
+---
+<br>
+
+### Day 7:
+
+Missed the opening ritual today.
+Definitely feeling slightly disorientated.
+But the work itself seems to be disorientating.
+
+Worked on the current offer & pricing.
 
 
