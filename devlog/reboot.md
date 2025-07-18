@@ -202,5 +202,22 @@ Definitely feeling slightly disorientated.
 But the work itself seems to be disorientating.
 
 Worked on the current offer & pricing.
+Resolved a pending issue with IT litigation.
 
+Worked on
+
+---
+<br>
+
+
+### Day 8:
+
+- Started the day with a brainstorming exercise.
+- Then had a marketing breakdown call.
+- Then regrouped with the "opening ritual".
+- Worked on the strategy.
+- Had a call with Viswanadh.
+
+_To be honest, this is not really making sense for me. Not sure what I'm doing with this._
+_This feels like reporting. My goal with this reboot was to use this to help elevate._
 
