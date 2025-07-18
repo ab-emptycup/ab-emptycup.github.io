@@ -26,3 +26,22 @@ Quotation functionality not working. Everything showing as zero.
 - Tried resetting the quote with no lukc.
 
 Next I want to first get it to work as expected before refactoring.
+
+
+### Hour 2:
+
+
+**Found out that copilot cannot make edits if the code is folded. WTF!**
+
+The issue is with the local storage backup functionality.
+When requesting quotation for new projects, it gets computed properly.
+
+The code is unbelievably ugly. I actually feel nauseated.
+I feel this strong urge to kill someone when I read it.
+
+I duplicated the `/quote` page into `/quotation` so that I break it apart and refactor.
+Sveltekit is acting up by suddenly giving 404 for `/quotation`. Tried cache refreshes.
+It worked once when I tried to reboot the container.
+It worked once again when I rebuilt the containers from scratch.
+This kind of unreliable dev setups are really frustrating (on top of the ugly code from juniors).
+
