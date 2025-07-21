@@ -28,6 +28,10 @@ Quotation functionality not working. Everything showing as zero.
 Next I want to first get it to work as expected before refactoring.
 
 
+----
+<br>
+
+
 ### Hour 2:
 
 
@@ -45,3 +49,71 @@ It worked once when I tried to reboot the container.
 It worked once again when I rebuilt the containers from scratch.
 This kind of unreliable dev setups are really frustrating (on top of the ugly code from juniors).
 
+
+---
+<br>
+
+### Hour 3:
+
+- Replaced the /quote to bypass the sveltekit issue
+- Separate js and css from the quote generator page
+
+Copilot is really slow on our repo because of .gitignored `data` and `logs` folders (presumably).
+I checked if there's a way to exclude them. Only available for Business Organisations & Enterprises.
+That sucks.
+
+Started refactoring.
+
+---
+<br>
+
+### Hour 4, 5:
+
+Cleaned up a major portion. Copilot helped with some big changes in the beginning.
+As the changes got smaller, it didn't make sense.
+
+---
+<br>
+
+### Hour 6, 7:
+
+The entire implementation has been a complete shit show.
+I'm torn between having to rewrite it and cleaning it up.
+The challenge with rewriting is the UI part.
+The more I think, the more I feel this is a lost cause.
+
+---
+<br>
+
+### Hour 8, 9, 10:
+
+Decided to continue cleaning this up normally.
+Rewrite would have been much easier especially with AI.
+There are thousands and thousands of ugly duplicated code.
+_One major learning for me is that AI in the hands of imbeciles can ruin a codebase._
+The worst part is that AI can't help with clean up.
+It takes other ugly parts of the code as inspiration.
+
+
+---
+<br>
+
+### Hour 11-14:
+
+Going on and on...
+At this point this is not even a good engineering session, let alone AI assist.
+
+---
+<br>
+
+### Hour 15, 16:
+
+My entire local db just vanished out of the blue.
+So strange and a bit scary.
+The database is empty. Not sure what went wrong.
+Must have something to do with the docker container build.
+Didn't feel like digging into it. So, got a db dump from beta and imported.
+
+Continued the refactoring.
+- Managed to get a price calculation to show for woodworks.
+- Units & LineItems not showing yet.
