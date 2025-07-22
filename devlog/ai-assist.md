@@ -117,3 +117,19 @@ Didn't feel like digging into it. So, got a db dump from beta and imported.
 Continued the refactoring.
 - Managed to get a price calculation to show for woodworks.
 - Units & LineItems not showing yet.
+
+---
+<br>
+
+
+### Hour 17, 18:
+
+- Got Units to show
+- Got Dimensions to show
+- Dimensions are now editable.
+
+Cursor AI has been quite helpful.
+_It seems the key is to define what is expected in a very detailed way._
+Lazy explanation and hoping AI will figure out isn't doing the trick.
+Typing in English is definitely less draining that typing code.
+But it does still force you to think in a pretty detailed manner.
