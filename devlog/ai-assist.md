@@ -162,4 +162,34 @@ I need to make some change in the way I work to leverage AI.
 Right now, I'm only able to take help when the changes are significant.
 Otherwise, I'm jumping in and making the changes myself.
 
-###
+### 23, 24:
+
+Got the Settings modal working
+Apart from minor glitches and slip ups, starting to get a hang of Agent mode.
+Really enjoying it.
+
+
+### 25, 26, 27, 28:
+
+Tried to get add items to work.
+Was a bit slow while multitasking a few things.
+Was able to quickly figure out the boundaries of AI.
+Tried to give it a broad description of functionality.
+It did manage to deliver step by step. But got quite a few things wrong.
+_So, its not about depth at all. It is about parallelism._
+The obvious next step for me to try would be to let it break down the
+implementation without making the changes and list it in text.
+Then I can offer corrections in one shot instead of trying to discover its implementation
+after it makes changes. That part is expensive in terms of my time.
+
+_Plus cursor is drinking token credits._
+I will have to work out techniques to minimize that.
+
+Even so, it is still a good deal compared to the output from the interns.
+On second thought, is it though? If we can find them, good interns are 5-10k per month.
+Best case they have a 1:10 return on my time. Their through put is may be 10x slower than AI.
+So, Output(1 hour of my time + 10 hours of their time) = Output(1 hour of my time + 1 hour of AI)
+Their month is 100 hours. So 50-100/hour. So, 10 hours is 0.5-1k.
+Right now AI for is at about 150 per hour. So, yeah 3-8x better.
+
+
