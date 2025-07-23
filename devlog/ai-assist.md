@@ -155,3 +155,11 @@ This is fun!
 - Got inclusion working
 - Got dimension updates working
 
+### Hour 22:
+
+Got the header working
+I need to make some change in the way I work to leverage AI.
+Right now, I'm only able to take help when the changes are significant.
+Otherwise, I'm jumping in and making the changes myself.
+
+###
