@@ -133,3 +133,25 @@ _It seems the key is to define what is expected in a very detailed way._
 Lazy explanation and hoping AI will figure out isn't doing the trick.
 Typing in English is definitely less draining that typing code.
 But it does still force you to think in a pretty detailed manner.
+
+
+### Hour 19:
+
+Starting to get a hang of Cursor now.
+Got it to implement the entire `Customisations` component.
+It did a pretty good job to be honest.
+_The key is to define the requirement very clearly._
+I think what led me astray so far is the small prompt box in the UI.
+You kinda default to small prompts with that UI.
+Instead I added a new folder `issues/` and described the functionality there.
+Then used that as a base to add more and more context.
+I used the `Ask` mode to take the description and generate the plan for an incremental implementation.
+This is fun!
+
+### Hour 20, 21:
+
+- Got price updates working
+- Fixed an issue with styling
+- Got inclusion working
+- Got dimension updates working
+
