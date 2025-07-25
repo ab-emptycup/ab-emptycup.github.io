@@ -227,4 +227,27 @@ I'd rather figure this out than figure out frontend. But I hear AI is built for 
 May be some other day.
 
 
+### Hour 35, 36, 37, 38:
+
+Redesigned whole data model in one shot.
+Wrote everything down in a markdown and fed it to AI.
+This time I didn't even ask it to breakdown the implementation into steps.
+It took almost 2 hours to spec out the whole data flow model. AI got it right in a minute.
+Implmenting that by hand would take anyone atleast a day if not two.
+
+Then I took another couple of hours fixing small issues and making some styling polishes.
+Not sure if I could have been even more specific with the requirements.
+The spec doc was a couple of hundred lines of code-dense markdown.
+
+I'm fairly happy with this level of engagement with AI.
+...and that barely cost me a dollar.
+
+The big takeaway here is:
+_You have to be very very specific to get AI to work._
+_You don't need to get to the level of pseudocode_
+_But, you should think of it as coding in English._
+_That's what works & saves a lot of $._
+
+###
+
 
