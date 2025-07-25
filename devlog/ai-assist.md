@@ -162,14 +162,14 @@ I need to make some change in the way I work to leverage AI.
 Right now, I'm only able to take help when the changes are significant.
 Otherwise, I'm jumping in and making the changes myself.
 
-### 23, 24:
+### Hour 23, 24:
 
 Got the Settings modal working
 Apart from minor glitches and slip ups, starting to get a hang of Agent mode.
 Really enjoying it.
 
 
-### 25, 26, 27, 28:
+### Hour 25, 26, 27, 28:
 
 Tried to get add items to work.
 Was a bit slow while multitasking a few things.
@@ -191,5 +191,40 @@ Best case they have a 1:10 return on my time. Their through put is may be 10x sl
 So, Output(1 hour of my time + 10 hours of their time) = Output(1 hour of my time + 1 hour of AI)
 Their month is 100 hours. So 50-100/hour. So, 10 hours is 0.5-1k.
 Right now AI for is at about 150 per hour. So, yeah 3-8x better.
+
+
+### Hour 29, 30:
+
+I had tried to push the AI a little bit yesterday by defining the problem statements
+at a slightly higher level and that caused a lot of collateral damage.
+It was very unclear whether to dump the entire change or make corrections.
+Just cleaning up a few things and getting the basic to work again took 2 hours.
+
+1. _Making AI do fuzzy things causes a lot of havoc_
+2. _Making AI edit an unclean / unorganised codebase is a bad idea._
+3. _Always. Always. Take the time to solve the problem logically first before asking AI to implement._
+4. _DO NOT get into the muck of cleaning up AI's work. That's the opposite of leverage._
+
+
+### Hour 31, 32, 33:
+
+Wasted some time trying to fix things, before realising bigger modules need to be rewritten.
+The `Dimension` component which was just a small input box was becoming too complicated.
+Finally decided to flesh out the requirements and just the untangling the complexity took 30min.
+AI did a decent job of implementing when the changes were so clearly defined.
+
+### Hour 34:
+
+Started fleshing out the requirements for another key module which is the data model for managing `units`.
+That started gathering a lot of complexity and needed to be simplifed and clarified. Midway through that.
+
+This has been a very disappointing week. On reflection, the root cause for this is the ugliness
+created in the existing code. I think I would have been faster and happier if I just dumped the old code
+and started from scratch.
+
+Frontend styling is still a weakpoint for me which caused me to avoid the rewrite from scratch.
+I'd rather figure this out than figure out frontend. But I hear AI is built for such dumb problems.
+May be some other day.
+
 
 
