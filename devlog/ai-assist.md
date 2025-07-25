@@ -248,6 +248,14 @@ _You don't need to get to the level of pseudocode_
 _But, you should think of it as coding in English._
 _That's what works & saves a lot of $._
 
-###
+### Hour 39, 40, 41, 42:
+
+Started to pick some steam with well defined implementation tasks.
+- Implemented saving the quote locally
+- Implmeented removing units from quotation
+- Implemented resetting the quotation
+- Improved styling for customisations
+- Removed icons and improved styling for header
+
 
 
