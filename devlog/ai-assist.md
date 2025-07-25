@@ -243,10 +243,10 @@ I'm fairly happy with this level of engagement with AI.
 ...and that barely cost me a dollar.
 
 The big takeaway here is:
-_You have to be very very specific to get AI to work._
-_You don't need to get to the level of pseudocode_
-_But, you should think of it as coding in English._
-_That's what works & saves a lot of $._
+- _You have to be very very specific to get AI to work._
+- _You don't need to get to the level of pseudocode_
+- _But, you should think of it as coding in English._
+- _That's what works & saves a lot of $._
 
 ### Hour 39, 40, 41, 42:
 
