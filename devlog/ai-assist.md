@@ -260,7 +260,6 @@ Started to pick some steam with well defined implementation tasks.
 
 ### Hour 43, 44, 45, 46, 47, 48:
 
-Implemented component level pricing.
-_Drove the refactor with AI completely._
-
-
+- Implemented component level pricing. _Drove the refactor with AI completely._
+- Got furniture loading from floorplan working.
+- Made a lot of clean ups and polshes.
