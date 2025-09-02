@@ -84,7 +84,8 @@ I'm eager to finish it off even if it means an extension post lunch.
 > It is something that can be written off as a polish, though it robs the feeling of elegance for a user.
 > I question my prioritization with such issues.
 
-Same story today. I couldn't give up that issue for fear that it might lead to a bigger issue in production.
-But, unfortunately, it eluded.
+Post lunch was painful. Same story today.
+I couldn't give up that issue for fear that it might lead to a bigger issue in production.
+But, unfortunately, it eluded day 2.
 
-
+Resolved a few things wrt to the sales pipeline before wrapping up for the day.
