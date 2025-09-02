@@ -63,3 +63,28 @@ I was only able to find my peace after my daily meditation.
 It shouldn't be like this.
 
 
+### Day 2:
+
+Continuing from where I left off yesterday.
+Before I get started, it seems my fiddling with the beta version seems to have had side effects.
+Got an notification from the team that they have been facing issues with beta since yesterday.
+I had even pushed the same branch to production. On production, there has been an instance of renders failing.
+
+I should probably, have a short session to continue the offline debugging on beta.
+In the afternoon, I need to take a look at the renders issue on production.
+
+The offline issue got resolved quickly.
+I cleaned up and refactored the implementation.
+There is still one small glitch with the loading icon not being properly cached offline.
+I did spend a half hour over it.
+I'm eager to finish it off even if it means an extension post lunch.
+
+> These are the kind of decisions that I find myself questioning often.
+> Fixing that issue would not impact functionality. Only the overall polish.
+> It is something that can be written off as a polish, though it robs the feeling of elegance for a user.
+> I question my prioritization with such issues.
+
+Same story today. I couldn't give up that issue for fear that it might lead to a bigger issue in production.
+But, unfortunately, it eluded.
+
+
