@@ -89,3 +89,23 @@ I couldn't give up that issue for fear that it might lead to a bigger issue in p
 But, unfortunately, it eluded day 2.
 
 Resolved a few things wrt to the sales pipeline before wrapping up for the day.
+
+
+### Day 3:
+
+I figured out the root cause of yesterday.
+I seems to be a completely unexpected detail. Fixed it.
+Fixed a couple of other glitches caused by the same issue on deploy.
+
+On deploying, found a bunch of other corner cases that needed to be addressed.
+The main cause was that on production, the frontend and backend are on different domains.
+Whereas in development, both are on localhost. Hence the behaviour of the cache needs to be updated.
+
+Made some fixes on podium.
+Added some of the missing videos.
+Reviewed some existing content and checked the analytics.
+It didn't look exciting on first glance. Looks like it will still be a slog.
+
+_Overall, another slow day._
+
+
