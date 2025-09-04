@@ -146,6 +146,6 @@ _Considerably more productive work day today._
 >
 > Culture is very much a product of leadership. The broader implication here is that this conflict
 > percolates slowly into the team as well. I have seen a few instances of that too, though it is much
-> easier for me to call it out and pacify the team. But, pacifying myself on the bad days is not easy.
+> easier for me to call it out and pacify the team. But, pacifying myself on the bad days is much harder.
 
 
