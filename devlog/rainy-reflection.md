@@ -100,6 +100,7 @@ Fixed a couple of other glitches caused by the same issue on deploy.
 On deploying, found a bunch of other corner cases that needed to be addressed.
 The main cause was that on production, the frontend and backend are on different domains.
 Whereas in development, both are on localhost. Hence the behaviour of the cache needs to be updated.
+Fixed all those issues.
 
 Made some fixes on podium.
 Added some of the missing videos.
@@ -107,5 +108,44 @@ Reviewed some existing content and checked the analytics.
 It didn't look exciting on first glance. Looks like it will still be a slog.
 
 _Overall, another slow day._
+
+
+### Day 4:
+
+- Fixed an issue with course contents not loading on first load.
+- Verified that offline support working without glitches on beta deployment.
+- Shared detailed feedback on the presentation for `Why design first...` lesson video.
+- Added address and phone number to the contact form
+- Added google maps embed of office location
+- Integrated the contact form with google chat on submission.
+- Added poster for the introduction section on the landing page.
+- Course content uploaded on Netlify was buffering repeated.
+  Switched to Azure Edge, though I wish Netlify could handle such basic stuff.
+  Need to evaluate if this is a netlify issue or if there's something else going on.
+
+Fix: Minor issues with offline support
+  - Removed embarassing error reporting
+  - Added explicit condition to cache select pages as well
+  - Fixed bug with reloading render tour on save
+
+There still seems to be some issue with the implementation as the page
+sometimes claims that the model has been updated. This seems to be a consequence
+of bypassing the cachebuster params on the woodwork and layout update requests.
+I need to dig deeper to verify and validate this. Will get to that tomorrow.
+
+Had a call with a client and then the marketing team. Both productive conversations.
+
+_Considerably more productive work day today._
+
+> I need to figure out how to reorient my internal sense of progress & productivity
+> so that I don't get effected by these ups and downs of work. It takes an emotional toll
+> when you have a few bad days in a row. At the same time, the good days aren't completely
+> due to my own doing. Focusing on the process more than the destination gets harder and harder
+> as the going gets tougher and tougher. I'm still trying to figure how to make that change
+> in my perspective. It doesn't feel like something that insight can address. It probably needs practice.
+>
+> Culture is very much a product of leadership. The broader implication here is that this conflict
+> percolates slowly into the team as well. I have seen a few instances of that too, though it is much
+> easier for me to call it out and pacify the team. But, pacifying myself on the bad days is not easy.
 
 
