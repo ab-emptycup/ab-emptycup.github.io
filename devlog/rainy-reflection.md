@@ -173,4 +173,3 @@ Implemented a CLI command `ec ratecard convert` to convert a `.xlsx` to `.json`.
 `claude-sonnet-4` is pretty impressive. It asked the right clarifying questions.
 Seems to have implemented smoothly. That was a good experience.
 The implementation is still a few steps from being merged though.
-
