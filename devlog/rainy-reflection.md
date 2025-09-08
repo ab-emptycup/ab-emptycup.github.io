@@ -173,3 +173,23 @@ Implemented a CLI command `ec ratecard convert` to convert a `.xlsx` to `.json`.
 `claude-sonnet-4` is pretty impressive. It asked the right clarifying questions.
 Seems to have implemented smoothly. That was a good experience.
 The implementation is still a few steps from being merged though.
+
+I was expecting this to take a week. So, pretty happy with today's result.
+
+### Day 6:
+
+Shelving the ratecard conversion branch temporarily.
+Picking up the issue where the layout gets updated due to cache buster param issues.
+Turned out the cache busters were not the issue at all. It was the browser referrer policy.
+Getting around that was lot of back & forth. For different asset types, different requests and different environments.
+This is really sticky stuff.
+
+> It was the right call to avoid this issue yesterday.
+> Would have drained all the energy without a positive result.
+> I underestimated the inertia of this thing even today.
+> Also committed the earlier sin of breaking time limit for the day.
+> I got frustrated and turned stubborn. Felt like stabbing someone midway through.
+> But managed to keep my calm and try again. Luckily I managed to get a breakthrough.
+> The battle is won, but the war is not over on such issues.
+
+
