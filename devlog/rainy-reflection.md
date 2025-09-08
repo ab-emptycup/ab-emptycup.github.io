@@ -193,3 +193,7 @@ This is really sticky stuff.
 > The battle is won, but the war is not over on such issues.
 
 
+### Day 7:
+
+Added support for explicit caching for offline mode. Nasty stuff.
+
