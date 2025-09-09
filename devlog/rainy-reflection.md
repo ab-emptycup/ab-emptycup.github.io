@@ -197,3 +197,23 @@ This is really sticky stuff.
 
 Added support for explicit caching for offline mode. Nasty stuff.
 
+
+### Day 8:
+
+Reviewed mixpanel numbers. A few immediate changes needed. Started working on those.
+
+- Implemented user identification
+- Implemented tracking user profile
+- Refactored firestore implementation
+
+Had a call with Kanishk to review lead quality.
+Decided to prioritise the change in flow to prioritise booking over course.
+
+- Setup claude code.
+- Implemented a booking first flow that excludes the course
+- Worked out data tracking using calendly
+
+> Good day today. Felt like high priority, high leverage work.
+> A welcome change from wading through that swamp.
+
+
