@@ -221,3 +221,25 @@ Worked on
 _To be honest, this is not really making sense for me. Not sure what I'm doing with this._
 _This feels like reporting. My goal with this reboot was to use this to help elevate._
 
+
+### Day 9:
+
+Was taken over by bug on production for very high end projects.
+Sat debugging that the entire day and late into the evening.
+The issue did not get resolved even then.
+Managed to provide a temporary workaround for a few days of relief.
+Will have to get back to this very soon.
+
+
+### Day 10:
+
+Got back to the highest priority issue: Increasing call bookings.
+Redid the website for a booking first flow.
+Claude is pleasant to work with. I haven't had a bad experience yet.
+Got the ad variations ready.
+Reviewed the v2 of the opening videos for the landing page & the course.
+Redid the voice over for one of the opening videos.
+Redid the ending for the intro video to change the CTA.
+
+### Day 11:
+
