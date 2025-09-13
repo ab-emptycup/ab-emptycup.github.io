@@ -236,6 +236,7 @@ Reviewed the v2 of the opening videos for the landing page & the course.
 Redid the voice over for one of the opening videos.
 Redid the ending for the intro video to change the CTA.
 
+
 ### Day 11:
 
 Deployed the updated videos.
@@ -244,3 +245,12 @@ Had a call with Surya to explain the ad creative strategy.
 A lot of website polishes and improvements in copy.
 Created an "impressive" /booking page.
 
+
+### Day 12:
+
+I want to spend a good chunk of time on the core product now.
+The 3 main angles that I need to shore up are: onboarding, devops & production.
+There's no way I can make any reasonable headway with any of those directions
+in the short amount of time that I have. Trying to leverage Claude to parallelise & automate.
+
+Just issue description and fleshing out an implementation is a big deal here.
