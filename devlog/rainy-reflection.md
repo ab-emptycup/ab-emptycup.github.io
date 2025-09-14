@@ -251,6 +251,33 @@ Created an "impressive" /booking page.
 I want to spend a good chunk of time on the core product now.
 The 3 main angles that I need to shore up are: onboarding, devops & production.
 There's no way I can make any reasonable headway with any of those directions
-in the short amount of time that I have. Trying to leverage Claude to parallelise & automate.
+in the short amount of time that I have.
 
+Trying to leverage Claude to parallelise & automate.
 Just issue description and fleshing out an implementation is a big deal here.
+Got claude to come up with first description.
+Setup a md file based workflow for iterating on implementations in parallel.
+Fleshed out a few issues in depth.
+
+> It feels truly liberating fleshing out issues for AI.
+> Thanks to the computing god(s?) for blessing me with such powers at this point in my life and work.
+
+
+### Day 13:
+
+Spent a couple of hours fleshing out 20 issues.
+
+The initial description that Claude came up with are totally useless.
+It feels like ChatGPT can probably do a better job at this. No code context whatsover.
+Iterating on github issue creation workflow with claude. Managing with .md files for now.
+
+Got claude to outline the implementation. That prompt needs to be refined much more.
+Even after my nuanced description of the issues. The input added by claude is very minimal.
+Failed to catch any insight in the outline phase.
+Infact, there were a few blunders that I chose to overlook.
+
+Decided it would be easier to refine the outlining flaws if I got a sense of how
+well the implementation goes. I might be able to infer patterns on where it does poorly
+and update my outline prompts to bring out those issues. So, let it rip and off it went.
+Had to give a few permissions and couple of nudges midway before it finished.o
+Will dig into those PRs tomorrow and evaluate the first round results.
