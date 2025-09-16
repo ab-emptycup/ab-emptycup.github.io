@@ -281,3 +281,33 @@ well the implementation goes. I might be able to infer patterns on where it does
 and update my outline prompts to bring out those issues. So, let it rip and off it went.
 Had to give a few permissions and couple of nudges midway before it finished.o
 Will dig into those PRs tomorrow and evaluate the first round results.
+
+
+### Day 14:
+
+Fix CORS
+  - Did not have allowed domains in config.py
+  - Unnecessary verbosity in logging
+  - Unnecessary function definitions in api.py (get_allowed_origins) even on refactor
+  - Bad choice of default behaviour (falling back to development config, further falling back to [])
+
+Thin Woodworks
+  - Completely broken implementation
+
+There's no point documenting this. It was a complete disaster.
+Claude's understanding was extremely superficial and it failed irrecoverably.
+One possibility could be that asking it to implement issues in a single thread caused this (unlikely).
+Another issue could be that the issues need to be fleshed out a much lower level.
+Better prompts would be able to help with this. A more involved workflow would do better.
+
+I'm cleaning up some old PR and putting together a sprint branch for release.
+
+### Day 15:
+
+Worked on a few issues myself today. For eg: Bulk customisation: Had to completely redo. But to be fair, the issue turned out to be more complex that I had thought.
+Still reviewing AI's v2 implementation for async fetch assets for render worker.
+Merged a couple more PRs into sprint for release tomorrow.
+
+I'll have to regroup and prioritise tomorrow.
+
+
