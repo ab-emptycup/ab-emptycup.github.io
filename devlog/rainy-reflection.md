@@ -311,3 +311,25 @@ Merged a couple more PRs into sprint for release tomorrow.
 I'll have to regroup and prioritise tomorrow.
 
 
+### Day 16:
+
+- Got the parallel asset fetch working.
+- Got the production release ready
+- Deployed on beta. Fixed a bunch of issues on beta.
+- Deployed to production. Rolled back a couple of issues.
+- The blind render crash from the other day still exists.
+
+Reviewed Azure cloud usage.
+Deployment still looking bad, especially with the CDN.
+Implemented the script for .json to .blend conversion for all furnishings.
+
+- [ ] Have to prioritize devops optimisation tomorrow
+- [ ] The public material upload also needs a patch
+- [ ] The render crash would need a hot monkey patch on production
+- [ ] The furnishing blends need to be reviewed
+- [ ] Consider migrating blob storage
+- [ ] Consider migrating to serverless
+
+
+### Day 17:
+
