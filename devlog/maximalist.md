@@ -92,19 +92,18 @@ Good times!
 - [x] ~~Rewired yesterday's course flow to capture visitor's profession and projects per month.~~
 - [x] ~~Test the flow locally and add documentation~~
 
+
 ## Day 3:
 
 - [ ] Setup Skills
 - [ ] Cleanup the superpowers plugin
-- [ ] Develop /shape
-- [ ] Explore #memory
 - [ ] Remove AGENTS.md & .cursor folders
-- [ ] Explore Amplifier
+- [ ] Setup CLAUDE.md
+- [ ] Develop /shape
 - [ ] Setup worktrees again (properly this time)
+- [ ] Explore #memory
+- [ ] Explore Amplifier
 
-
-- [ ] Test the material application issue on beta
-- [ ] Investigate issue with quote composition
 
 
 - [ ] Remove side effects for tests in Gong
@@ -117,7 +116,13 @@ Good times!
 - [ ] Integrate with Podium
 
 
-- [ ] Setup a tutorials website using the available tutorials on `learn.emptycup3d.com`
+
+- [ ] Setup a /tutorials page
+- [ ] Test the material application issue on beta
+- [ ] Investigate issue with quote composition
+
+
+
 
 
 
