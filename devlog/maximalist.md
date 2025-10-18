@@ -77,44 +77,47 @@ Good times!
 
 ## Day 2:
 
-- [ ] Setup Skills
-- [ ] Cleanup the superpowers plugin
-- [ ] Develop /shape
-- [ ] Explore #memory
-- [ ] Remove AGENTS.md & .cursor folders
-- [x] ~~Setup --dangeriously-skip-permissions~~
-- [ ] Explore Amplifier
-- [ ] Setup worktrees again (properly this time)
+[x] ~~Setup --dangeriously-skip-permissions~~
+
+[x] ~~Got a production issue at 3 in the morning. Turned out to be a race condition in project save. Patched it.~~
+[x] ~~Test yesterday's project import script~~
+[x] ~~Browser based auth flow is incompletely implemented.~~
+[x] ~~Got a new production issue in the afternoon where 2D drawings are not being exported.~~
+
+[x] ~~Investigate issue with 2D drawings using only the top left quadrant~~
+[x] ~~Fix the device dependent 2D drawing rendering issue~~
+[x] ~~Investigate the efficacy of the 2D drawings~~
+  - Fixed a nasty bug after 2 hours of iterative debugging.
+
+[x] ~~Rewired yesterday's course flow to capture visitor's profession and projects per month.~~
+[x] ~~Test the flow locally and add documentation~~
+
+## Day 3:
+
+[ ] Setup Skills
+[ ] Cleanup the superpowers plugin
+[ ] Develop /shape
+[ ] Explore #memory
+[ ] Remove AGENTS.md & .cursor folders
+[ ] Explore Amplifier
+[ ] Setup worktrees again (properly this time)
 
 
-
-- [x] ~~Got a production issue at 3 in the morning. Turned out to be a race condition in project save. Patched it.~~
-- [x] ~~Test yesterday's project import script~~
-- [x] ~~Browser based auth flow is incompletely implemented.~~
-- [x] ~~Got a new production issue in the afternoon where 2D drawings are not being exported.~~
-- [ ] Test the material application issue on beta
-- [ ] Investigate issue with quote composition
-- [x] ~~Investigate issue with 2D drawings using only the top left quadrant~~
-- [x] ~~Fix the device dependent 2D drawing rendering issue~~
-- [x] ~~Investigate the efficacy of the 2D drawings~~
-    - ~~Fixed a nasty bug after 2 hours of iterative debugging.~~
+[ ] Test the material application issue on beta
+[ ] Investigate issue with quote composition
 
 
-- [x] ~~Rewired yesterday's course flow to capture visitor's profession and projects per month.~~
-- [x] ~~Test the flow locally and add documentation~~
+[ ] Remove side effects for tests in Gong
+[ ] Setup Sendgrid and integrate in dev
+[ ] Setup WhatApp API and integrate in dev
+[ ] Draft a test drip definition file
+[ ] Shape & implement Gong API authentication
+[ ] Brainstorm and develop course retention drip messages
+[ ] Deploy on Azure
+[ ] Integrate with Podium
 
 
-- [ ] Remove side effects for tests in Gong
-- [ ] Setup Sendgrid and integrate in dev
-- [ ] Setup WhatApp API and integrate in dev
-- [ ] Draft a test drip definition file
-- [ ] Shape & implement Gong API authentication
-- [ ] Brainstorm and develop course retention drip messages
-- [ ] Deploy on Azure
-- [ ] Integrate with Podium
-
-- [ ] Setup a tutorials website using the available tutorials on `learn.emptycup3d.com`
-
+[ ] Setup a tutorials website using the available tutorials on `learn.emptycup3d.com`
 
 
 
