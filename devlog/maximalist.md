@@ -75,7 +75,7 @@ Haven't even touched Gong today. Deploying that will be the priority tomorrow as
 Good times!
 
 
-## Day 2:
+---
 
 - ~~Setup --dangeriously-skip-permissions~~
 
@@ -94,17 +94,51 @@ Good times!
 
 ---
 
-## Day 3:
+
+Cleaned up CLAUDE.md and set it up for all repos at ~.
+Added detailed code style guidelines. 
+
+
+---
+
+Shaping session:
+
+- ~~Refactor of WalkinLoader~~
+- ~~Cleanup of old render workflow~~
+- ~~Principled BSDF Implementation~~
+- ~~Render tuning framework~~
+- ~~Azure blob storage to Cloudflare R2 migration~~
+- ~~Project backup & restore~~
+- ~~Theme duplication along with project~~
+- ~~System wide credential rotation~~
+- ~~Alias cleanups in shell configs~~
+- ~~Rate limiting for API~~
+- ~~Community catalogues~~
+- ~~Catalogue favourites now persisit in DB~~
+- ~~UI for ratecard editor~~
+
+
+---
+
+
+
+- ~~Remove AGENTS.md & .cursor folders~~
+- ~~Setup CLAUDE.md~~
+- ~~Setup worktrees again (properly this time)~~
+
+- ~~Setup a /tutorials page~~
+
+- ~~Investigate issue with quote composition~~
+
+
+
+---
 
 - Setup Skills
-- Cleanup the superpowers plugin
-- Remove AGENTS.md & .cursor folders
-- Setup CLAUDE.md
+- Cleanup superpowers
 - Develop /shape
-- Setup worktrees again (properly this time)
 - Explore #memory
 - Explore Amplifier
-
 
 
 - Remove side effects for tests in Gong
@@ -117,13 +151,27 @@ Good times!
 - Integrate with Podium
 
 
+- Review and merge the pending PRs
+    - Iterate on the PBR tuning framework
 
-- Setup a /tutorials page
+- Brainstorm pending issues:
+    - Creating concept renders
+    - Composing modules & quote integration
+    - Fixing the existing test suite
+    - Complete code audit
+    - Fixing docs
+    - Blob encryption
+    - Curved ledge design & composition
+
 - Test the material application issue on beta
-- Investigate issue with quote composition
+- Investigate the wall composition inconsistency
+
+- Resolve the quote composition issue across projects
+    - Resolve issue with local project import
 
 
 
+---
 
 
 
