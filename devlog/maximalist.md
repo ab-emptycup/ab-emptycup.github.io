@@ -150,7 +150,6 @@ Shaping session:
 - Deploy on Azure
 - Integrate with Podium
 
-
 - Review and merge the pending PRs
     - Iterate on the PBR tuning framework
 
@@ -166,9 +165,12 @@ Shaping session:
 - Test the material application issue on beta
 - Investigate the wall composition inconsistency
 
-- Resolve the quote composition issue across projects
-    - Resolve issue with local project import
-
+- ~~Resolve the quote composition issue across projects~~
+    - ~~Resolve issue with local project import~~
+    - ~~Fix expired token server error~~
+    - ~~Fixed the semantics of the unit level pricing switch~~
+    - ~~Pricing level can be switched from quote page itself~~
+    - ~~Improved the styling of the project settings modal~~
 
 
 ---
