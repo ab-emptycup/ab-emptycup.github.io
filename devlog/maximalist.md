@@ -101,6 +101,7 @@ Added detailed code style guidelines.
 
 ---
 
+
 Shaping session:
 
 - ~~Refactor of WalkinLoader~~
@@ -121,34 +122,85 @@ Shaping session:
 ---
 
 
-
 - ~~Remove AGENTS.md & .cursor folders~~
 - ~~Setup CLAUDE.md~~
 - ~~Setup worktrees again (properly this time)~~
-
 - ~~Setup a /tutorials page~~
-
 - ~~Investigate issue with quote composition~~
+
+
+---
+
+
+- ~~Setup Skills~~
+- ~~Cleanup superpowers~~
+- ~~Resolve the quote composition issue across projects~~
+    - ~~Resolve issue with local project import~~
+    - ~~Fix expired token server error~~
+    - ~~Fixed the semantics of the unit level pricing switch~~
+    - ~~Pricing level can be switched from quote page itself~~
+    - ~~Improved the styling of the project settings modal~~
+
+
+---
+
+
+- ~~Setting the stage for v3 release:~~
+   - ~~cleaned up feature branches~~
+   - ~~rebased beta & master~~
+   - ~~developed a pr-review skill~~
+
+- Reviewed: API Ratelimiting
+    - ~~Fixed a bunch of issues in code~~
+    - ~~Redis config not handled properly~~
+    - ~~Server not setup properly~~
+    - Looks like base container image needs to be updated
+    - That would require assimp updated
+    - That could break the furnishing flows
+    - Need to setup the test suite
+        - ~~Wrote the implementation plan for an e2e test suite~~
+        - ~~Implement the plan and debug test suite~~
+        - ~~Fixed issue with auth for tests~~
+        - ~~Fixed issue with database connections~~
+        - ~~Gave directions to claude on how to iteratively navigate the app & update tests~~
+
+```
+
+⏺ Task(Fix test_furnishing_library.py)
+  ⎿  Done (67 tool uses · 140.9k tokens · 19m 48s)
+
+⏺ Task(Fix test_material_catalogue.py)
+  ⎿  Done (38 tool uses · 69.3k tokens · 18m 0s)
+
+⏺ Task(Fix test_material_duplication.py)
+  ⎿  Done (30 tool uses · 59.8k tokens · 13m 16s)
+```
 
 
 
 ---
 
-- Setup Skills
-- Cleanup superpowers
+Test suite implementation:
+ - Current implementation is a mess.
+ - CC has been struggling since yesterday morning.
+ - Took multiple shots at making it stable. But far from ready.
+    - Failed tests
+    - Unreliable tests (race conditions & timeouts)
+ - ~~Got a simplified single regression test (with 9 test cases working)~~
+
+
+Meanwhile, there are a few production issues that need resolution:
+
+- ~~VSL based registration flow on Podium~~
+- ~~Ratecard upload bug on beta~~
+- Resolving the line conflict from ratecard (for matching categories)
+
+
+----
+
 - Develop /shape
 - Explore #memory
 - Explore Amplifier
-
-
-- Remove side effects for tests in Gong
-- Setup Sendgrid and integrate in dev
-- Setup WhatApp API and integrate in dev
-- Draft a test drip definition file
-- Shape & implement Gong API authentication
-- Brainstorm and develop course retention drip messages
-- Deploy on Azure
-- Integrate with Podium
 
 - Review and merge the pending PRs
     - Iterate on the PBR tuning framework
@@ -165,15 +217,14 @@ Shaping session:
 - Test the material application issue on beta
 - Investigate the wall composition inconsistency
 
-- ~~Resolve the quote composition issue across projects~~
-    - ~~Resolve issue with local project import~~
-    - ~~Fix expired token server error~~
-    - ~~Fixed the semantics of the unit level pricing switch~~
-    - ~~Pricing level can be switched from quote page itself~~
-    - ~~Improved the styling of the project settings modal~~
-
-
----
+- Remove side effects for tests in Gong
+- Setup Sendgrid and integrate in dev
+- Setup WhatApp API and integrate in dev
+- Draft a test drip definition file
+- Shape & implement Gong API authentication
+- Brainstorm and develop course retention drip messages
+- Deploy on Azure
+- Integrate with Podium
 
 
 
