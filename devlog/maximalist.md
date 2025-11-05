@@ -3,40 +3,66 @@ layout: page
 title: AI Maximalist
 ---
 
-- Add credits to KaaS
-    - Verify admin access to add credits
-    - Add Dilpreet as an admin
 
-- Merge the /quotation related PRs
-    - Ratecard import validations
-    - DB backed quotations
-    - Ratecard sharing
-    - Show validation message on rate card upload
-
-
-- Get codex to write the tests
-
-
-- Deploy the VSL flow
-
-
-- Flesh out a leaner test suite
+Deploy quotations v3
+ - ~~Get db backed quotations ready~~
+ - Review & test ratecard sharing
+    - ~~The PR was so messy that I started fleshing out the requirement again~~
+    - ~~Consider moving `Ratecard.name` to `Account.ratecards`~~
+    - ~~Kick off reimplementation~~
+    - Looks like the quality of code is still pretty poor
 
 
 
+PR review and code polishes are taking *A LOT* of time.
+Though I think there's a way to streamline with proper tooling, the current setup is painful.
+It is taking almost as long for pr review with AI as it would manually. Probably even a little more.
+Here's what I have in mind to address this:
+    - a structured pr review skill
+    - a structured code polish subagent
 
 
+Merge the test suite
 
+Setup Gong to engage new registrations on website
 
 
 
 
+---
 
 
+- Should I complete the lean test suite?
+- Should I get the work started on the large test suite?
+- Should I continue reviewing more PRs?
+- Should I setup the PR review tooling?
+- Should I merge pending PRs?
+- Should I kick off the PBR thread?
+- Should I integrate a simple test suite?
+- Should I start work on v3?
 
 
+What's urgent and what's important?
+    - Nothing blocking right now.
+Ok, so its not about urgency then. What then?
+    - Not sure where to get started.
+May be its time to get organised a little. 
+    - The v0 tests are already in master
+    - v1 tests will take time 
+    - v1 tests might exhaust claude credits
+    - codex has already been exhausted
+Can we move forward without test suite then?
+    ...forward to what?
+Either merge existing PRs or v3?
+    - Definitely feels like clean up and v3
+    - But that might disturb the environment too much.
+    - ~~First starting to clean up my system~~
+        - Running out of memory too often
+        - Running out of storage space too often
+            - Freed up 70GB
+        - CPU hits 100% regularly
 
-
+Started by cleaning up the docs. Better get started than think about it.
 
 
 
@@ -83,6 +109,26 @@ title: AI Maximalist
 - Integrate with Podium
 
 
+---
+
+
+- ~~Add credits to KaaS~~
+    - Verify admin access to add credits
+    - Add Dilpreet as an admin
+
+- Merge the /quotation related PRs
+    - ~~Ratecard import validations~~
+    - ~~DB backed quotations~~
+    - Ratecard sharing
+    - ~~Show validation message on rate card upload~~
+
+- ~~Flesh out a leaner test suite~~
+- ~~Get codex to write the tests~~
+
+- ~~Deploy the VSL flow~~
+
+- ~~Implemented a cli tool `note` after losing a 30min prompt on claude~~
+- ~~Implemented a cli tool `hn` to summarise and filter hacker news to test codex~~
 
 ----
 
