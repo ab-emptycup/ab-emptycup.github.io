@@ -4,6 +4,26 @@ title: AI Maximalist
 ---
 
 
+I'm clearly getting overwhelmed by multi tasking.
+I think I'll be way more effective if I just did single tasking and don't care about driving AI. 
+It feels like in the pursuit of driving AI, I'm losing my way.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
 
 - Unable to see customisations for tandom box
 - Assets are taking time to load after offline support
@@ -19,39 +39,6 @@ title: AI Maximalist
 
 
 - Add `note edit <id>`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
