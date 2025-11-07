@@ -4,33 +4,73 @@ title: AI Maximalist
 ---
 
 
-Deploy quotations v3
- - ~~Get db backed quotations ready~~
- - Review & test ratecard sharing
-    - ~~The PR was so messy that I started fleshing out the requirement again~~
-    - ~~Consider moving `Ratecard.name` to `Account.ratecards`~~
-    - ~~Kick off reimplementation~~
-    - Looks like the quality of code is still pretty poor
+
+- Unable to see customisations for tandom box
+- Assets are taking time to load after offline support
+
+
+- Code review / Code polish agent
+    - ~~Write a skill by hand myself~~
+    - ~~Bootstrapped the skill with TDD Skill builder~~
+    - ~~Tested it against a live PR~~
+    - ~~Revised it for more rigourous checking~~
+    - ~~Mega Polish: Ran the skill on the entire codebase~~
 
 
 
-PR review and code polishes are taking *A LOT* of time.
-Though I think there's a way to streamline with proper tooling, the current setup is painful.
-It is taking almost as long for pr review with AI as it would manually. Probably even a little more.
-Here's what I have in mind to address this:
-    - a structured pr review skill
-    - a structured code polish subagent
+- Add `note edit <id>`
 
 
-Merge the test suite
 
-Setup Gong to engage new registrations on website
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 ---
 
+
+- Reorganised all the docs
+- Cleaned up old out-of-date docs
+- Setup AGENTS.md with guidelines for writing docs
+- Rewrote all the docs as per the guidelines
+- Reorganised all the ai implementation plans
+- Fixed the skills to respect the new conventions
+- Fixed aliases to avoid dumping pages of AI plans in diffs
+
+Hard to believe what a big difference that cleanup has made on my psyche.
+I feel so much lighter in the head. I'm actually excited to build further.
+
+
+---
 
 - Should I complete the lean test suite?
 - Should I get the work started on the large test suite?
@@ -66,18 +106,32 @@ Started by cleaning up the docs. Better get started than think about it.
 
 
 
+---
+
+Deploy quotations v3
+ - ~~Get db backed quotations ready~~
+ - Review & test ratecard sharing
+    - ~~The PR was so messy that I started fleshing out the requirement again~~
+    - ~~Consider moving `Ratecard.name` to `Account.ratecards`~~
+    - ~~Kick off reimplementation~~
+    - Looks like the quality of code is still pretty poor
 
 
 
+PR review and code polishes are taking *A LOT* of time.
+Though I think there's a way to streamline with proper tooling, the current setup is painful.
+It is taking almost as long for pr review with AI as it would manually. Probably even a little more.
+Here's what I have in mind to address this:
+    - a structured pr review skill
+    - a structured code polish subagent
 
 
+Merge the test suite
 
-
+Setup Gong to engage new registrations on website
 
 
 ----
-
-### Backlog
 
 
 - Develop /shape
