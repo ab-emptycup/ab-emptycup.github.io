@@ -4,18 +4,14 @@ title: AI Maximalist
 ---
 
 
-I'm clearly getting overwhelmed by multi tasking.
-I think I'll be way more effective if I just did single tasking and don't care about driving AI. 
-It feels like in the pursuit of driving AI, I'm losing my way.
+ - ~~Cleaned up and rebased all PRs. Feeling a little better now.~~
+ - 
 
 
 
 
-
-
-
-
-
+ - Show login succeeded in browser for `ec login prod`
+ 
 
 
 
@@ -25,9 +21,39 @@ It feels like in the pursuit of driving AI, I'm losing my way.
 
 
 
-- Unable to see customisations for tandom box
-- Assets are taking time to load after offline support
+  - ~~Need to rethink how the test data is tracked (git lfs?)~~
+  - ~~Need to rethink the way tests include frontend code.~~
+  - Need to figure out a way for UI component testing.
+  - Need to bring the test recorder for E2E testing.
+  - `ec projects save --from beta/prod <pid> <pjsonp>`
+  - `ec ratecards validate <xlsxp>`
+  - Update config.py to create rootdirp relative to file
+  - 
 
+
+
+---
+
+
+I'm clearly getting overwhelmed by multi tasking.
+I think I'll be way more effective if I just did single tasking and don't care about driving AI. 
+It feels like in the pursuit of driving AI, I'm losing my way.
+
+- ~~Unable to see customisations for tandom box~~
+- ~~Handling open boxes & tall units intelligently~~
+
+
+Simplified my approach. Instead of trying to design a test suite for the entire codebase,
+now I'm just focusing on the ratecard and quotation flow. This is itself is a big deal.
+It seems even this small subproblem still carries a lot of that architectural complexity.
+
+
+
+---
+
+
+
+- Assets are taking time to load after offline support
 
 - Code review / Code polish agent
     - ~~Write a skill by hand myself~~
